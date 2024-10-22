@@ -1,0 +1,35 @@
+﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.DonHang
+
+<h2>Chi tiết đơn hàng</h2>
+
+<p>
+    <strong>Ngày đặt:</strong> @Model.NgayDat?.ToString("dd/MM/yyyy")<br /> <!-- Hiển thị ngày đặt -->
+    <strong>Tổng tiền:</strong> @Model.TongTien.ToString("C")<br /> <!-- Hiển thị tổng tiền -->
+    <strong>Trạng thái:</strong> @Model.TrangThai <!-- Hiển thị trạng thái đơn hàng -->
+</p>
+
+<h3>Danh sách sản phẩm trong đơn hàng</h3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Giá</th>
+            <th>Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.ChiTietDonHang as List<TTCD1_NGUYENDANHTRUONG_2210900071.Models.ChiTietDonHang>)
+        {
+            <tr>
+                <td>@item.SanPham.TenSanPham</td> <!-- Hiển thị tên sản phẩm -->
+                <td>@item.SoLuong</td> <!-- Hiển thị số lượng -->
+                <td>@item.Gia.ToString("C")</td> <!-- Hiển thị giá sản phẩm -->
+                <td>@(item.SoLuong * item.Gia).ToString("C")</td> <!-- Hiển thị thành tiền (Số lượng * Giá) -->
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Index", "DonHangs")" class="btn btn-primary">Quay lại</a> <!-- Quay lại danh sách đơn hàng -->

@@ -1,33 +1,298 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="vi">
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Shop Quần Áo Online</title>
+    <link rel="stylesheet" href="~/css/StyleSheet1.css">
+    <style>
+        /* CSS cho trang chủ */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar .logo h1 {
+            margin: 0;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar nav ul li {
+            margin: 0 10px;
+        }
+
+        .navbar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .categories, .featured-products {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .categories h2, .featured-products h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category-list, .product-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .category-item, .product-item {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            width: calc(25% - 20px);
+        }
+
+        .category-item img, .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-item h3 {
+            margin: 10px 0;
+        }
+
+        .product-item button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product-item button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Media Queries cho responsive */
+        @**@media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .category-item, .product-item {
+                width: calc(100% - 20px);
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            #menu-list {
+                display: none;
+                flex-direction: column;
+            }
+
+            #menu-list li {
+                margin: 10px 0;
+            }
+        }
+
+        @**@media (max-width: 1024px) and
+            (min-width: 769px) {
+            .category-item, .product-item {
+                width: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Thanh điều hướng -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Shop Quần Áo</h1>
+            </div>
+            <nav>
+                <ul id="menu-list">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li>@Html.ActionLink("Sản Phẩm", "Index", "SanPhams", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Danh mục", "Index", "DanhMucs", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Giỏ hàng", "Index", "GioHangs", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Đăng nhập", "Index", "NguoiDungs", new { area = "" }, new { @class = "nav-link" })</li>
+                </ul>
+                <div class="hamburger" id="hamburger-menu">
+                    &#9776;
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner quảng cáo -->
+    <section class="banner">
+        <img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_1_img.jpg?v=549" alt="Banner Khuyến Mãi">
     </section>
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
-    </div>
-</main>
+    <!-- Danh mục sản phẩm -->
+    <section class="categories">
+        <h2>Danh mục sản phẩm</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <img src="category1.jpg" alt="Áo sơ mi">
+                <h3>Áo sơ mi</h3>
+            </div>
+            <div class="category-item">
+                <img src="category2.jpg" alt="Quần Jean">
+                <h3>Quần Jean</h3>
+            </div>
+            <div class="category-item">
+                <img src="category3.jpg" alt="Áo Phông">
+                <h3>Áo thun</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sản phẩm nổi bật -->
+    <section class="featured-products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-list" id="product-slider">
+            <div class="product-item">
+                <img src="https://aoxuanhe.com/upload/product/axh-003/ao-so-mi-hang-hieu-den-nam-tinh-0.jpg" alt="Áo sơ mi trắng" loading="lazy">
+                <h3>Áo sơ mi trắng</h3>
+                <p>Giá: 250,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product-item">
+                <img src="https://product.hstatic.net/200000325151/product/zeka-cac-mau-jean-nam-7_ba27b638826543d7b7c95d00862e4740.png" alt="Quần Jean đen" loading="lazy">
+                <h3>Quần Jean đen</h3>
+                <p>Giá: 300,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product-item">
+                <img src="https://dongphuchaianh.com/wp-content/uploads/2022/04/ao-thun-hinh-mat-he-ket-hop-cung-quan-short.jpg" alt="Áo Phông" loading="lazy">
+                <h3>Áo Phông</h3>
+                <p>Giá: 150,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shop Quần Áo Online. Tất cả quyền được bảo vệ.</p>
+    </footer>
+
+    <!-- JavaScript cho Responsive Menu và Các tính năng khác -->
+    <script>
+        // Toggle menu cho thiết bị di động
+        document.getElementById("hamburger-menu").addEventListener("click", function () {
+            var menu = document.getElementById("menu-list");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+
+        // Slider sản phẩm
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.product-slider .product-item');
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 2000); // 2 giây chuyển slide
+        }
+
+        showSlides();
+
+        // Phóng to hình ảnh sản phẩm khi nhấn
+        const productImages = document.querySelectorAll('.product-item img');
+        productImages.forEach(function (image) {
+            image.addEventListener('click', function () {
+                const modal = document.createElement('div');
+                modal.style.position = 'fixed';
+                modal.style.top = '0';
+                modal.style.left = '0';
+                modal.style.width = '100vw';
+                modal.style.height = '100vh';
+                modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+                modal.style.display = 'flex';
+                modal.style.alignItems = 'center';
+                modal.style.justifyContent = 'center';
+                modal.style.zIndex = '1000';
+
+                const modalImg = document.createElement('img');
+                modalImg.src = this.src;
+                modalImg.style.maxWidth = '90%';
+                modalImg.style.maxHeight = '90%';
+                modal.appendChild(modalImg);
+
+                document.body.appendChild(modal);
+
+                modal.addEventListener('click', function () {
+                    modal.remove();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.SanPham
+
+@{
+    ViewBag.Title = "Thêm sản phẩm";
+}
+
+<h2>Thêm sản phẩm</h2>
+
+@using (Html.BeginForm("Create", "SanPhams", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-2">Tên sản phẩm</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.TenSanPham, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Mô tả</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.MoTa, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Giá</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Gia, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Số lượng</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.SoLuong, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Danh mục</label>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ID_DanhMuc, (SelectList)ViewBag.ID_DanhMuc, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <!-- Thêm phần hình ảnh -->
+        <div class="form-group">
+            <label class="control-label col-md-2">Hình ảnh sản phẩm</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.HinhAnh, new { @class = "form-control", type = "file" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm sản phẩm" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,19 @@
+﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.DonHang
+
+<h2>Xác nhận thanh toán</h2>
+
+@if (Model != null)
+{
+    <p>Đơn hàng của bạn đã được thanh toán thành công với mã đơn hàng: @Model.ID</p>
+    <p>Tổng tiền: @Model.TongTien.ToString("C")</p>
+    <p>Ngày đặt: @(Model.NgayDat.HasValue ? Model.NgayDat.Value.ToString("dd/MM/yyyy HH:mm:ss") : "N/A")</p>
+    <p>Trạng thái: @Model.TrangThai</p>
+
+    <form action="@Url.Action("Details", "DonHangs", new { id = Model.ID })" method="post">
+        <input type="submit" value="Xác nhận thanh toán thành công" />
+    </form>
+}
+else
+{
+    <p>Không tìm thấy thông tin đơn hàng!</p>
+}

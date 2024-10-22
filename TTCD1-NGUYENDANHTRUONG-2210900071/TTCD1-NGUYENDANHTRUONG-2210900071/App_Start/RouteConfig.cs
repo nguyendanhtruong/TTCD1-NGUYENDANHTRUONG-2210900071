@@ -18,6 +18,13 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+    name: "ConfirmOrder",
+    url: "GioHangs/ConfirmOrder/{id}",
+    defaults: new { controller = "GioHangs", action = "ConfirmOrder", id = UrlParameter.Optional }
+);
+
         }
+
     }
 }

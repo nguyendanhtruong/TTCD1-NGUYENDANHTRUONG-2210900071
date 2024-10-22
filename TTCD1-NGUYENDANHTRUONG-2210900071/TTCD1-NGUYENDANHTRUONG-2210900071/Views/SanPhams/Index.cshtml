@@ -1,0 +1,88 @@
+﻿@model List<TTCD1_NGUYENDANHTRUONG_2210900071.Models.SanPham>
+
+<h2>Danh sách sản phẩm</h2>
+
+<!-- Thêm phần CSS trực tiếp vào trang -->
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    td img {
+        border-radius: 5px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    a {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        a:hover {
+            background-color: #218838;
+        }
+
+    td a {
+        margin-right: 10px;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    td {
+        vertical-align: middle;
+        text-align: center;
+    }
+</style>
+
+<!-- Giao diện hiển thị sản phẩm -->
+<table>
+    <thead>
+        <tr>
+            <th>Hình ảnh</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sanPham in Model)
+        {
+            <tr>
+                <td>
+                    <!-- Hiển thị ảnh với đường dẫn đầy đủ -->
+                    <img src="@Url.Content("~/Images/" + sanPham.HinhAnh)" alt="@sanPham.TenSanPham" style="width: 100px;" />
+                </td>
+                <td>@sanPham.TenSanPham</td>
+                <td>@sanPham.Gia.ToString("C")</td>
+                <td>
+                    <!-- Liên kết thêm sản phẩm vào giỏ hàng -->
+                    <a href="@Url.Action("AddToCart", "GioHangs", new { id = sanPham.ID })">Thêm vào giỏ hàng</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Index", "GioHangs")">Xem giỏ hàng</a>

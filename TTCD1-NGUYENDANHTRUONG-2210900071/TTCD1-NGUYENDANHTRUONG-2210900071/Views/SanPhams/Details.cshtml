@@ -1,0 +1,18 @@
+﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.SanPham
+
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+}
+
+<h2>Chi tiết sản phẩm</h2>
+
+<div>
+    <h4>@Model.TenSanPham</h4>
+    <p>@Model.MoTa</p>
+    <p>Giá: @Model.Gia</p>
+    <p>Số lượng: @Model.SoLuong</p>
+    <p>Danh mục: @Model.DanhMuc.TenDanhMuc</p>
+</div>
+<p>
+    @Html.ActionLink("Quay lại", "Index")
+</p>

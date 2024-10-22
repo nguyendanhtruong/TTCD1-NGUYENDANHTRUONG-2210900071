@@ -1,0 +1,33 @@
+﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.DanhMuc
+
+@{
+    ViewBag.Title = "Chỉnh sửa danh mục";
+}
+
+<h2>Chỉnh sửa danh mục</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-2">Tên danh mục</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.TenDanhMuc, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Mô tả</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.MoTa, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Chỉnh sửa danh mục" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
