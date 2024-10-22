@@ -172,7 +172,9 @@
                     <li>@Html.ActionLink("Sản Phẩm", "Index", "SanPhams", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Danh mục", "Index", "DanhMucs", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Giỏ hàng", "Index", "GioHangs", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Đơn Hàng ", "Index", "DonHangs", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Đăng nhập", "Index", "NguoiDungs", new { area = "" }, new { @class = "nav-link" })</li>
+
                 </ul>
                 <div class="hamburger" id="hamburger-menu">
                     &#9776;
@@ -185,25 +187,7 @@
     <section class="banner">
         <img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_1_img.jpg?v=549" alt="Banner Khuyến Mãi">
     </section>
-
-    <!-- Danh mục sản phẩm -->
-    <section class="categories">
-        <h2>Danh mục sản phẩm</h2>
-        <div class="category-list">
-            <div class="category-item">
-                <img src="category1.jpg" alt="Áo sơ mi">
-                <h3>Áo sơ mi</h3>
-            </div>
-            <div class="category-item">
-                <img src="category2.jpg" alt="Quần Jean">
-                <h3>Quần Jean</h3>
-            </div>
-            <div class="category-item">
-                <img src="category3.jpg" alt="Áo Phông">
-                <h3>Áo thun</h3>
-            </div>
-        </div>
-    </section>
+    <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Bắt Đầu Mua Sắm </a>
 
     <!-- Sản phẩm nổi bật -->
     <section class="featured-products">
@@ -212,20 +196,20 @@
             <div class="product-item">
                 <img src="https://aoxuanhe.com/upload/product/axh-003/ao-so-mi-hang-hieu-den-nam-tinh-0.jpg" alt="Áo sơ mi trắng" loading="lazy">
                 <h3>Áo sơ mi trắng</h3>
-                <p>Giá: 250,000 VNĐ</p>
-                <button>Mua ngay</button>
+                <p>Giá: 25,000 VNĐ</p>
+                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Mua ngay</a>
             </div>
             <div class="product-item">
                 <img src="https://product.hstatic.net/200000325151/product/zeka-cac-mau-jean-nam-7_ba27b638826543d7b7c95d00862e4740.png" alt="Quần Jean đen" loading="lazy">
                 <h3>Quần Jean đen</h3>
-                <p>Giá: 300,000 VNĐ</p>
-                <button>Mua ngay</button>
+                <p>Giá: 30,000 VNĐ</p>
+                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Mua ngay</a>
             </div>
             <div class="product-item">
                 <img src="https://dongphuchaianh.com/wp-content/uploads/2022/04/ao-thun-hinh-mat-he-ket-hop-cung-quan-short.jpg" alt="Áo Phông" loading="lazy">
                 <h3>Áo Phông</h3>
-                <p>Giá: 150,000 VNĐ</p>
-                <button>Mua ngay</button>
+                <p>Giá: 20,000 VNĐ</p>
+                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Mua ngay</a>
             </div>
         </div>
     </section>

@@ -20,6 +20,17 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
             var sanPhams = db.SanPhams.Include(s => s.DanhMuc);
             return View(sanPhams.ToList());
         }
+        public ActionResult Delete(int id)
+        {
+            DonHang donHang = db.DonHangs.Include(d => d.NguoiDung) // Bao gồm NguoiDung để hiển thị tên người dùng
+                                          .FirstOrDefault(d => d.ID == id);
+            if (donHang == null)
+            {
+                return HttpNotFound();
+            }
+            return View(donHang);
+        }
+
 
         // Thêm sản phẩm vào giỏ hàng
         public ActionResult AddToCart(int id)

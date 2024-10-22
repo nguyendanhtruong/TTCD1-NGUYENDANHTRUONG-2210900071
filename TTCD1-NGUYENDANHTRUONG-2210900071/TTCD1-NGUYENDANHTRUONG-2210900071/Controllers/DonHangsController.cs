@@ -38,5 +38,18 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
 
             return View(donHang); // Trả về View hiển thị chi tiết đơn hàng
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id)
+        {
+            DonHang donHang = db.DonHangs.Find(id);
+            if (donHang != null)
+            {
+                db.DonHangs.Remove(donHang);
+                db.SaveChanges();
+            }
+            return RedirectToAction("Index"); // Hoặc quay lại trang danh sách đơn hàng
+        }
+
     }
 }
