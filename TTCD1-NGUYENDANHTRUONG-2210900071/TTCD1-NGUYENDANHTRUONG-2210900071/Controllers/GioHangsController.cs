@@ -96,7 +96,7 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
             {
                 NgayDat = DateTime.Now,
                 TongTien = tongTien,
-                TrangThai = "Chờ xử lý",
+                TrangThai = "Đã thanh toán",  // Sửa trạng thái thành "Đã thanh toán"
                 ID_NguoiDung = 1 // Giả sử người dùng có ID là 1
             };
 

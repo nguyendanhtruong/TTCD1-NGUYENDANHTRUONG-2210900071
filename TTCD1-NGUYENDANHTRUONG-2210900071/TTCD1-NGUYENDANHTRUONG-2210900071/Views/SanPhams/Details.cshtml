@@ -1,18 +1,13 @@
 ﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.SanPham
 
-@{
-    ViewBag.Title = "Chi tiết sản phẩm";
-}
-
 <h2>Chi tiết sản phẩm</h2>
 
 <div>
-    <h4>@Model.TenSanPham</h4>
-    <p>@Model.MoTa</p>
-    <p>Giá: @Model.Gia</p>
-    <p>Số lượng: @Model.SoLuong</p>
-    <p>Danh mục: @Model.DanhMuc.TenDanhMuc</p>
+    <h3>@Model.TenSanPham</h3>
+    <img src="@Url.Content("~/Images/" + @Model.HinhAnh)" alt="@Model.TenSanPham" />
+    <p>Giá: @Model.Gia.ToString("C")</p>
+    <p>Danh mục: @(Model.DanhMuc != null ? Model.DanhMuc.TenDanhMuc : "Không có danh mục")</p>
+    <p>Mô tả: @Model.MoTa</p>
 </div>
-<p>
-    @Html.ActionLink("Quay lại", "Index")
-</p>
+
+<a href="@Url.Action("Index", "SanPhams")">Quay lại danh sách</a>

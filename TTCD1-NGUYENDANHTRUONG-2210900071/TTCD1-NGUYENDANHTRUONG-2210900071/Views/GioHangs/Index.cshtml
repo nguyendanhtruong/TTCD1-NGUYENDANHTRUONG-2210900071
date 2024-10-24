@@ -70,6 +70,7 @@
         text-align: center;
     }
 </style>
+<a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Quay Lại Trang Sản Phẩm </a>
 
 <!-- Giao diện hiển thị giỏ hàng -->
 @if (Model != null && Model.Any())
@@ -101,6 +102,7 @@
                     </td>
                     <td>@item.SanPham.Gia.ToString("C")</td>
                     <td>
+
                         <a href="@Url.Action("RemoveFromCart", "GioHangs", new { id = item.ID_SanPham })">Xóa</a>
                     </td>
                 </tr>

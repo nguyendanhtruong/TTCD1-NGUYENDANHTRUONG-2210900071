@@ -15,11 +15,21 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
         private Entities db = new Entities();
 
         // GET: SanPhams
-        public ActionResult Index()
+        public ActionResult Index(int? categoryId)
         {
+            // Lấy tất cả danh mục để hiển thị trong dropdown lọc
+            ViewBag.DanhMucList = new SelectList(db.DanhMucs.ToList(), "ID", "TenDanhMuc");
+
+            // Nếu người dùng chọn danh mục, lọc sản phẩm theo danh mục đó
             var sanPhams = db.SanPhams.Include(s => s.DanhMuc);
+            if (categoryId.HasValue)
+            {
+                sanPhams = sanPhams.Where(s => s.ID_DanhMuc == categoryId.Value);
+            }
+
             return View(sanPhams.ToList());
         }
+
         public ActionResult Delete(int id)
         {
             DonHang donHang = db.DonHangs.Include(d => d.NguoiDung) // Bao gồm NguoiDung để hiển thị tên người dùng
@@ -72,19 +82,18 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
         }
 
         // GET: SanPhams/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            SanPham sanPham = db.SanPhams.Find(id);
+            var sanPham = db.SanPhams.Include(s => s.DanhMuc).FirstOrDefault(s => s.ID == id);
+
             if (sanPham == null)
             {
                 return HttpNotFound();
             }
+
             return View(sanPham);
         }
+
 
         // GET: SanPhams/Create
         public ActionResult Create()

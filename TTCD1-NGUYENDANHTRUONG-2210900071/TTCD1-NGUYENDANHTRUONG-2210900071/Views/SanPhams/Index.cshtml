@@ -2,18 +2,44 @@
 
 <h2>Danh sách sản phẩm</h2>
 
+<!-- Thanh lọc danh mục -->
+<form method="get" action="@Url.Action("Index", "SanPhams")">
+    <label for="DanhMucList">Lọc theo danh mục:</label>
+    @Html.DropDownList("categoryId", (SelectList)ViewBag.DanhMucList, "Tất cả", new { onchange = "this.form.submit();" })
+</form>
+
 <!-- Thêm phần CSS trực tiếp vào trang -->
 <style>
+    .header {
+        display: flex;
+        justify-content: flex-end; /* Đẩy nội dung về bên phải */
+        margin-bottom: 20px; /* Khoảng cách dưới thanh tiêu đề */
+    }
+
+        .header a {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px; /* Kích thước nhỏ hơn */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px; /* Kích thước chữ nhỏ hơn */
+            transition: background-color 0.3s ease;
+        }
+
+            .header a:hover {
+                background-color: #0056b3;
+            }
+
     .product-list {
         display: flex;
-        flex-wrap: wrap; /* Cho phép các khung sản phẩm xuống hàng nếu vượt quá chiều rộng */
-        justify-content: space-between; /* Phân bổ đều các sản phẩm */
-        gap: 20px; /* Khoảng cách giữa các sản phẩm */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
         padding: 20px;
     }
 
     .product-item {
-        flex: 1 1 calc(25% - 20px); /* Mỗi sản phẩm chiếm 1/4 chiều rộng (trừ khoảng cách giữa các sản phẩm) */
+        flex: 1 1 calc(25% - 20px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -48,22 +74,40 @@
             color: #777;
         }
 
-    .product-actions a {
-        background-color: #28a745;
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 16px;
-        text-align: center;
-        display: block;
+        .product-info .category {
+            font-size: 16px;
+            color: #555;
+            font-style: italic;
+        }
+
+    /* Đặt các nút trên cùng một hàng */
+    .product-actions {
+        display: flex;
+        justify-content: space-between;
         width: 100%;
     }
 
-        .product-actions a:hover {
-            background-color: #218838;
+        .product-actions a {
+            background-color: #28a745;
+            color: white;
+            padding: 8px; /* Kích thước nhỏ hơn */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px; /* Kích thước chữ nhỏ hơn */
+            text-align: center;
+            width: 48%; /* Chia đôi chiều rộng giữa hai nút */
+            transition: background-color 0.3s ease;
         }
+
+            .product-actions a:hover {
+                background-color: #218838;
+            }
 </style>
+
+<!-- Hiển thị nút "Xem giỏ hàng" ở góc trên bên phải -->
+<div class="header">
+    <a href="@Url.Action("Index", "GioHangs")">Xem giỏ hàng</a>
+</div>
 
 <!-- Giao diện hiển thị sản phẩm theo hàng ngang -->
 <div class="product-list">
@@ -76,14 +120,18 @@
             <div class="product-info">
                 <h3>@sanPham.TenSanPham</h3>
                 <p>Giá: @sanPham.Gia.ToString("C")</p>
+                <!-- Hiển thị danh mục sản phẩm -->
+                <p class="category">
+                    Danh mục: @(sanPham.DanhMuc != null ? sanPham.DanhMuc.TenDanhMuc : "Không có danh mục")
+                </p>
             </div>
 
             <div class="product-actions">
-                <!-- Liên kết thêm sản phẩm vào giỏ hàng -->
+                <!-- Nút thêm sản phẩm vào giỏ hàng -->
                 <a href="@Url.Action("AddToCart", "GioHangs", new { id = sanPham.ID })">Thêm vào giỏ hàng</a>
+                <!-- Nút xem chi tiết sản phẩm -->
+                <a href="@Url.Action("Details", "SanPhams", new { id = sanPham.ID })">Xem chi tiết sản phẩm</a>
             </div>
         </div>
     }
 </div>
-
-<a href="@Url.Action("Index", "GioHangs")">Xem giỏ hàng</a>

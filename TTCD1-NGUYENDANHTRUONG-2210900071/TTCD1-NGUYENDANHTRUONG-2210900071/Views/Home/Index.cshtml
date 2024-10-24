@@ -88,11 +88,13 @@
             border-radius: 8px;
             text-align: center;
             width: calc(25% - 20px);
+            transition: transform 0.3s;
         }
 
         .category-item img, .product-item img {
             width: 100%;
             height: auto;
+            border-radius: 8px;
         }
 
         .product-item h3 {
@@ -106,6 +108,7 @@
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         .product-item button:hover {
@@ -150,11 +153,15 @@
             }
         }
 
-        @**@media (max-width: 1024px) and
-            (min-width: 769px) {
+        @**@media (max-width: 1024px) and (min-width: 769px) {
             .category-item, .product-item {
                 width: calc(50% - 20px);
             }
+        }
+
+        /* Hiệu ứng hover cho sản phẩm */
+        .product-item:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -173,8 +180,7 @@
                     <li>@Html.ActionLink("Danh mục", "Index", "DanhMucs", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Giỏ hàng", "Index", "GioHangs", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Đơn Hàng ", "Index", "DonHangs", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Đăng nhập", "Index", "NguoiDungs", new { area = "" }, new { @class = "nav-link" })</li>
-
+                    <li>@Html.ActionLink("Đăng nhập", "Login", "NguoiDungs", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
                 <div class="hamburger" id="hamburger-menu">
                     &#9776;
@@ -216,7 +222,10 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Shop Quần Áo Online. Tất cả quyền được bảo vệ.</p>
+        SHOP BÁN QUẦN ÁO THỜI TRANG<br>
+        NGUYỄN DANH TRƯỜNG <br>
+        SỐ ĐIỆN THOẠI HỖ TRỢ: 0797475264 <br>
+        EMAIL: truong626215@gmail.com
     </footer>
 
     <!-- JavaScript cho Responsive Menu và Các tính năng khác -->
