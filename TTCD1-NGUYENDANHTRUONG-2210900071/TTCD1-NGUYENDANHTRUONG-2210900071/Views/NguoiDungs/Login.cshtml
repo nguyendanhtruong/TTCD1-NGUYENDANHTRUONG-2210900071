@@ -1,113 +1,54 @@
-﻿@{
-    ViewBag.Title = "Đăng nhập";
+﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.NguoiDung
+
+@{
+    ViewBag.Title = "Đăng Nhập";
 }
 
-<style>
-    body {
-        background-color: #f7f7f7;
-        font-family: Arial, sans-serif;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #333;
-    }
-
-    .form-horizontal {
-        background-color: #ffffff;
-        padding: 30px;
-        border-radius: 5px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        max-width: 400px;
-        margin: 0 auto; /* Center the form */
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    .control-label {
-        font-weight: bold;
-    }
-
-    .form-control {
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 10px;
-        width: 100%; /* Full-width inputs */
-        box-sizing: border-box; /* Ensure padding doesn't affect width */
-    }
-
-    .btn-primary {
-        background-color: #007bff;
-        border: none;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 4px;
-        cursor: pointer;
-        width: 100%; /* Full-width button */
-    }
-
-        .btn-primary:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-        }
-
-    .alert {
-        padding: 10px;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        margin-bottom: 20px;
-    }
-
-    .alert-danger {
-        color: #a94442;
-        background-color: #f2dede;
-        border-color: #ebccd1;
-    }
-</style>
-
-<h2>Đăng nhập</h2>
+<h2>Đăng Nhập</h2>
 
 @if (ViewBag.ErrorMessage != null)
 {
-    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
 }
 
-@if (TempData["SuccessMessage"] != null)
-{
-    <script>
-        alert("@TempData["SuccessMessage"]");
-    </script>
-}
-
-@using (Html.BeginForm())
+@using (Html.BeginForm("Login", "NguoiDungs", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <div class="form-group">
-            <label class="control-label col-md-2">Email</label>
-            <div class="col-md-10">
-                <input type="email" name="Email" class="form-control" required />
-            </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email", required = "required" })
         </div>
+    </div>
 
-        <div class="form-group">
-            <label class="control-label col-md-2">Mật khẩu</label>
-            <div class="col-md-10">
-                <input type="password" name="MatKhau" class="form-control" required />
-            </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.MatKhau, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.MatKhau, new { @class = "form-control", placeholder = "Mật Khẩu", required = "required" })
         </div>
+    </div>
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Đăng nhập" class="btn btn-primary" />
-            </div>
+    <div class="form-group">
+        @Html.Label("Vai Trò", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Role", new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Người dùng", Value = "User" },
+                new SelectListItem { Text = "Admin", Value = "Admin" }
+            }, "Value", "Text"), "Chọn vai trò", new { @class = "form-control", required = "required" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Đăng Nhập" class="btn btn-default" />
         </div>
     </div>
 }
 
-<p>
-    Bạn chưa có tài khoản? @Html.ActionLink("Đăng ký", "Create")
-</p>
+<div>
+    <p>Bạn chưa có tài khoản? <a href="@Url.Action("Register", "NguoiDungs")">Đăng ký ngay</a></p>
+</div>

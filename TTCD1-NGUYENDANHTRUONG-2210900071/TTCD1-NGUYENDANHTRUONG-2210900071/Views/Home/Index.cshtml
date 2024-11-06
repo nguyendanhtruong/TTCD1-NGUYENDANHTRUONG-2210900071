@@ -7,162 +7,216 @@
     <title>Trang Chủ - Shop Quần Áo Online</title>
     <link rel="stylesheet" href="~/css/StyleSheet1.css">
     <style>
-        /* CSS cho trang chủ */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+      /* Cài đặt chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-        }
+/* Thanh điều hướng */
+header {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        .navbar .logo h1 {
-            margin: 0;
-        }
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
 
-        .navbar nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-        .navbar nav ul li {
-            margin: 0 10px;
-        }
+.navbar nav ul li {
+    margin: 0 15px;
+}
 
-        .navbar nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
+.navbar nav ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
 
-        .hamburger {
-            display: none;
-            font-size: 24px;
-            cursor: pointer;
-            margin-left: 20px;
-        }
+.navbar nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
 
-        .banner img {
-            width: 100%;
-            height: auto;
-        }
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+}
 
-        .categories, .featured-products {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
+/* Banner */
+.banner {
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-        .categories h2, .featured-products h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+.banner-slider {
+    display: flex;
+    transition: transform 1s ease;
+    width: 100%;
+    height: 100%;
+}
 
-        .category-list, .product-list {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
+.banner-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
 
-        .category-item, .product-item {
-            background-color: white;
-            padding: 20px;
-            margin: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-            width: calc(25% - 20px);
-            transition: transform 0.3s;
-        }
+/* Danh mục và sản phẩm */
+.categories, .featured-products {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
 
-        .category-item img, .product-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+.categories h2, .featured-products h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
 
-        .product-item h3 {
-            margin: 10px 0;
-        }
+.category-list, .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-        .product-item button {
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+.category-item, .product-item {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(25% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .product-item button:hover {
-            background-color: #555;
-        }
+.category-item:hover, .product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
+.category-item img, .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-        /* Media Queries cho responsive */
-        @**@media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
+.product-item h3 {
+    margin: 15px 0;
+    color: #333;
+}
 
-            .navbar nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
+.product-item p {
+    color: #777;
+    font-weight: bold;
+}
 
-            .category-item, .product-item {
-                width: calc(100% - 20px);
-            }
+.product-item button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-            .hamburger {
-                display: block;
-            }
+.product-item button:hover {
+    background-color: #0056b3;
+}
 
-            #menu-list {
-                display: none;
-                flex-direction: column;
-            }
+/* Footer */
+footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
 
-            #menu-list li {
-                margin: 10px 0;
-            }
-        }
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
 
-        @**@media (max-width: 1024px) and (min-width: 769px) {
-            .category-item, .product-item {
-                width: calc(50% - 20px);
-            }
-        }
+footer a:hover {
+    text-decoration: underline;
+}
 
-        /* Hiệu ứng hover cho sản phẩm */
-        .product-item:hover {
-            transform: scale(1.05);
-        }
+/* Media Queries cho responsive */
+@**@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-item, .product-item {
+        width: calc(100% - 20px);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #menu-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu-list li {
+        margin: 10px 0;
+    }
+}
+
+@**@media (max-width: 1024px) and (min-width: 769px) {
+    .category-item, .product-item {
+        width: calc(50% - 20px);
+    }
+}
+
     </style>
 </head>
 
@@ -175,13 +229,15 @@
             </div>
             <nav>
                 <ul id="menu-list">
-                    <li><a href="#">Trang chủ</a></li>
+                    <li>@Html.ActionLink("Trang chủ", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Sản Phẩm", "Index", "SanPhams", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Danh mục", "Index", "DanhMucs", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Giỏ hàng", "Index", "GioHangs", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Đơn Hàng ", "Index", "DonHangs", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Đăng nhập", "Login", "NguoiDungs", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Admin", "NdtIndex", "Admins", new { area = "" }, new { @class = "nav-link" })</li>
+
                 </ul>
+
                 <div class="hamburger" id="hamburger-menu">
                     &#9776;
                 </div>
@@ -191,7 +247,21 @@
 
     <!-- Banner quảng cáo -->
     <section class="banner">
-        <img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_1_img.jpg?v=549" alt="Banner Khuyến Mãi">
+        <div class="banner-slider">
+            <!-- Bộ ảnh 1 -->
+            <img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_1_img.jpg?v=549" alt="Banner Khuyến Mãi">
+            <img src="https://file.hstatic.net/1000026602/collection/banner_desktop_td_241007_af7ed3a89a5d4a958d3604eccc8cbed1.jpg" alt="Banner Khuyến Mãi">
+            <img src="https://img.pikbest.com/origin/06/43/50/933pIkbEsT7AG.jpg!w700wp" alt="Banner Khuyến Mãi">
+            <img src="https://city89.com/wp-content/uploads/2023/05/banner-city89-mobile.jpg" alt="Banner Khuyến Mãi">
+            <img src="https://lados.vn/wp-content/uploads/2024/08/Lados-quan-jeans-nam.jpg" alt="Banner Khuyến Mãi">
+
+            <!-- Bộ ảnh 2 (giống ảnh 1 để tạo hiệu ứng lặp liên tục) -->
+            <img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_1_img.jpg?v=549" alt="Banner Khuyến Mãi">
+            <img src="https://file.hstatic.net/1000026602/collection/banner_desktop_td_241007_af7ed3a89a5d4a958d3604eccc8cbed1.jpg" alt="Banner Khuyến Mãi">
+            <img src="https://img.pikbest.com/origin/06/43/50/933pIkbEsT7AG.jpg!w700wp" alt="Banner Khuyến Mãi">
+            <img src="https://city89.com/wp-content/uploads/2023/05/banner-city89-mobile.jpg" alt="Banner Khuyến Mãi">
+            <img src="https://lados.vn/wp-content/uploads/2024/08/Lados-quan-jeans-nam.jpg" alt="Banner Khuyến Mãi">
+        </div>
     </section>
     <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Bắt Đầu Mua Sắm </a>
 
@@ -201,21 +271,21 @@
         <div class="product-list" id="product-slider">
             <div class="product-item">
                 <img src="https://aoxuanhe.com/upload/product/axh-003/ao-so-mi-hang-hieu-den-nam-tinh-0.jpg" alt="Áo sơ mi trắng" loading="lazy">
-                <h3>Áo sơ mi trắng</h3>
+                <h3>Áo sơ mi</h3>
                 <p>Giá: 25,000 VNĐ</p>
-                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Mua ngay</a>
+                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
             </div>
             <div class="product-item">
                 <img src="https://product.hstatic.net/200000325151/product/zeka-cac-mau-jean-nam-7_ba27b638826543d7b7c95d00862e4740.png" alt="Quần Jean đen" loading="lazy">
-                <h3>Quần Jean đen</h3>
+                <h3>Quần Jean </h3>
                 <p>Giá: 30,000 VNĐ</p>
-                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Mua ngay</a>
+                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
             </div>
             <div class="product-item">
                 <img src="https://dongphuchaianh.com/wp-content/uploads/2022/04/ao-thun-hinh-mat-he-ket-hop-cung-quan-short.jpg" alt="Áo Phông" loading="lazy">
                 <h3>Áo Phông</h3>
                 <p>Giá: 20,000 VNĐ</p>
-                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Mua ngay</a>
+                <a href="@Url.Action("Index", "SanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
             </div>
         </div>
     </section>
@@ -228,62 +298,27 @@
         EMAIL: truong626215@gmail.com
     </footer>
 
-    <!-- JavaScript cho Responsive Menu và Các tính năng khác -->
     <script>
-        // Toggle menu cho thiết bị di động
-        document.getElementById("hamburger-menu").addEventListener("click", function () {
-            var menu = document.getElementById("menu-list");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        });
+        // JavaScript để chuyển động banner
+        const bannerSlider = document.querySelector('.banner-slider');
+        let currentIndex = 0;
 
-        // Slider sản phẩm
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.product-slider .product-item');
-
-        function showSlides() {
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
+        function slideBanners() {
+            currentIndex++;
+            if (currentIndex >= bannerSlider.children.length) {
+                currentIndex = 0;
             }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1; }
-            slides[slideIndex - 1].style.display = 'block';
-            setTimeout(showSlides, 2000); // 2 giây chuyển slide
+            bannerSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
 
-        showSlides();
+        setInterval(slideBanners, 4000); // Chuyển banner sau mỗi 3 giây
 
-        // Phóng to hình ảnh sản phẩm khi nhấn
-        const productImages = document.querySelectorAll('.product-item img');
-        productImages.forEach(function (image) {
-            image.addEventListener('click', function () {
-                const modal = document.createElement('div');
-                modal.style.position = 'fixed';
-                modal.style.top = '0';
-                modal.style.left = '0';
-                modal.style.width = '100vw';
-                modal.style.height = '100vh';
-                modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-                modal.style.display = 'flex';
-                modal.style.alignItems = 'center';
-                modal.style.justifyContent = 'center';
-                modal.style.zIndex = '1000';
+        // JavaScript cho nút hamburger trên mobile
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const menuList = document.getElementById('menu-list');
 
-                const modalImg = document.createElement('img');
-                modalImg.src = this.src;
-                modalImg.style.maxWidth = '90%';
-                modalImg.style.maxHeight = '90%';
-                modal.appendChild(modalImg);
-
-                document.body.appendChild(modal);
-
-                modal.addEventListener('click', function () {
-                    modal.remove();
-                });
-            });
+        hamburgerMenu.addEventListener('click', function () {
+            menuList.style.display = menuList.style.display === 'flex' ? 'none' : 'flex';
         });
     </script>
 </body>

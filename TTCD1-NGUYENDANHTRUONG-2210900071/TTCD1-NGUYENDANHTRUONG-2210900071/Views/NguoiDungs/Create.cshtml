@@ -1,80 +1,10 @@
 ﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.NguoiDung
 
 @{
-    ViewBag.Title = "Đăng ký tài khoản";
+    ViewBag.Title = "Đăng ký Người Dùng";
 }
 
-<style>
-    body {
-        background-color: #f7f7f7;
-        font-family: Arial, sans-serif;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #333;
-    }
-
-    .form-horizontal {
-        background-color: #ffffff;
-        padding: 30px;
-        border-radius: 5px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        max-width: 500px; /* Tăng chiều rộng tối đa của form */
-        margin: 0 auto; /* Center the form */
-    }
-
-    h4 {
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    .control-label {
-        font-weight: bold;
-    }
-
-    .form-control {
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 10px;
-        width: 100%; /* Full-width inputs */
-        box-sizing: border-box; /* Ensure padding doesn't affect width */
-    }
-
-    .btn-primary {
-        background-color: #007bff;
-        border: none;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 4px;
-        cursor: pointer;
-        width: 100%; /* Full-width button */
-    }
-
-        .btn-primary:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-        }
-
-    .alert {
-        padding: 10px;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        margin-bottom: 20px;
-    }
-
-    .alert-danger {
-        color: #a94442;
-        background-color: #f2dede;
-        border-color: #ebccd1;
-    }
-</style>
-
-<h2>Đăng ký</h2>
+<h2>Đăng ký Người Dùng</h2>
 
 @if (ViewBag.ErrorMessage != null)
 {
@@ -84,59 +14,52 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-
     <div class="form-horizontal">
         <h4>Thông tin tài khoản</h4>
         <hr />
 
         <div class="form-group">
-            @Html.LabelFor(model => model.TenNguoiDung, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.TenNguoiDung, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.TenNguoiDung, "", new { @class = "text-danger" })
-            </div>
+            @Html.LabelFor(model => model.TenNguoiDung, new { @class = "control-label" })
+            @Html.EditorFor(model => model.TenNguoiDung, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TenNguoiDung, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-            </div>
+            @Html.LabelFor(model => model.Email, new { @class = "control-label" })
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.MatKhau, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.PasswordFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
-            </div>
+            @Html.LabelFor(model => model.MatKhau, new { @class = "control-label" })
+            @Html.PasswordFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SoDienThoai, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
-            </div>
+            <label>Vai Trò</label>
+            @if (ViewBag.IsAdmin != null && (bool)ViewBag.IsAdmin) // Kiểm tra xem ViewBag.IsAdmin có giá trị và là true
+            {
+                <div>
+                    <input type="radio" name="isAdmin" value="true" id="registerAdmin" />
+                    <label for="registerAdmin">Đăng ký Admin</label>
+                </div>
+                <div>
+                    <input type="radio" name="isAdmin" value="false" id="registerUser" checked="checked" />
+                    <label for="registerUser">Đăng ký Người Dùng</label>
+                </div>
+            }
+            else
+            {
+                <p>Vai trò của bạn: Người Dùng</p>
+                @Html.Hidden("isAdmin", "false")// Không cho phép chọn admin
+            }
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DiaChi, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Đăng ký" class="btn btn-primary" />
-            </div>
+            <input type="submit" value="Đăng ký" class="btn btn-primary" />
         </div>
     </div>
 }
 
-<p>
-    Bạn đã có tài khoản? @Html.ActionLink("Đăng nhập", "Login")
-</p>
+<p>Bạn đã có tài khoản? @Html.ActionLink("Đăng nhập", "Login")</p>

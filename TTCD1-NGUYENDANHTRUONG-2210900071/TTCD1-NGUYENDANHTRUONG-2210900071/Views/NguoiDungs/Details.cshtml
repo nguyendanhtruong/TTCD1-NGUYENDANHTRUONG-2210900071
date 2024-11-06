@@ -1,74 +1,27 @@
 ﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.NguoiDung
 
-@{
-    ViewBag.Title = "Details";
-}
-
-<h2>Details</h2>
+<h2>Chi tiết người dùng</h2>
 
 <div>
-    <h4>NguoiDung</h4>
+    <h4>Thông tin người dùng</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TenNguoiDung)
-        </dt>
+    <dl class="row">
+        <dt class="col-sm-2">Tên người dùng</dt>
+        <dd class="col-sm-10">@Model.TenNguoiDung</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.TenNguoiDung)
-        </dd>
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.Email</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
+        <dt class="col-sm-2">Số điện thoại</dt>
+        <dd class="col-sm-10">@Model.SoDienThoai</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
+        <dt class="col-sm-2">Địa chỉ</dt>
+        <dd class="col-sm-10">@Model.DiaChi</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.MatKhau)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.MatKhau)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SoDienThoai)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SoDienThoai)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DiaChi)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DiaChi)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.VaiTro)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.VaiTro)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NgayTao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NgayTao)
-        </dd>
-
+        <dt class="col-sm-2">Vai trò</dt>
+        <dd class="col-sm-10">@Model.VaiTro</dd>
     </dl>
+    <p>
+        @Html.ActionLink("Quay lại", "Index")
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

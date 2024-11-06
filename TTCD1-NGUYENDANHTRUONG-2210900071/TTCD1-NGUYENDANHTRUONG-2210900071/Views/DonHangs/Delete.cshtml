@@ -1,28 +1,44 @@
 ﻿@model TTCD1_NGUYENDANHTRUONG_2210900071.Models.DonHang
 
+@{
+    ViewBag.Title = "Xóa Đơn Hàng";
+}
+
 <h2>Xóa Đơn Hàng</h2>
 
-<p>Bạn có chắc chắn muốn xóa đơn hàng này không?</p>
+<div>
+    <h4>Đơn Hàng</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayTao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NgayTao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_NguoiDung)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ID_NguoiDung)
+        </dd>
+        <!-- Thêm các thuộc tính khác của đơn hàng nếu cần -->
+    </dl>
 
-<table class="table">
-    <tr>
-        <th>Ngày đặt</th>
-        <td>@Model.NgayDat?.ToString("dd/MM/yyyy")</td>
-    </tr>
-    <tr>
-        <th>Tổng tiền</th>
-        <td>@Model.TongTien.ToString("C")</td>
-    </tr>
-    <tr>
-        <th>Trạng thái</th>
-        <td>@Model.TrangThai</td>
-    </tr>
-</table>
+    <h4>Bạn có chắc chắn muốn xóa đơn hàng này?</h4>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
 
-@using (Html.BeginForm("Delete", "DonHangs", FormMethod.Post))
-{
-    @Html.AntiForgeryToken() <!-- Thêm token bảo mật -->
-    <input type="hidden" name="id" value="@Model.ID" />
-    <button type="submit" class="btn btn-danger">Xóa</button>
-    @Html.ActionLink("Hủy", "Index", null, new { @class = "btn btn-default" })
-}
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

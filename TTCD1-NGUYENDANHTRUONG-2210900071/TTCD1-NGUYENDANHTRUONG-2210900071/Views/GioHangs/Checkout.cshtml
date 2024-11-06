@@ -18,13 +18,13 @@
                 <td><img src="@Url.Content("~/Images/" + item.SanPham.HinhAnh)" alt="@item.SanPham.TenSanPham" style="width: 100px;" /></td>
                 <td>@item.SanPham.TenSanPham</td>
                 <td>@item.SoLuong</td>
-                <td>@item.SanPham.Gia.ToString("C")</td>
+                <td>@item.SanPham.Gia</td>
             </tr>
         }
     </tbody>
 </table>
 
-<p>Tổng tiền: @Model.Sum(item => item.SanPham.Gia * item.SoLuong).ToString("C")</p>
+<p>Tổng tiền: @Model.Sum(item => item.SanPham.Gia * item.SoLuong)</p>
 
 <form action="@Url.Action("Checkout", "GioHangs")" method="post">
     <input type="submit" value="Xác nhận thanh toán" class="btn btn-primary" />

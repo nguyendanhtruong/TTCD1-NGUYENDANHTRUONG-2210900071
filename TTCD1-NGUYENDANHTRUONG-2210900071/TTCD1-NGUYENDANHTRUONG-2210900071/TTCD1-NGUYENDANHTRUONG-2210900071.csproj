@@ -277,14 +277,15 @@
     <Content Include="Views\ChiTietDonHangs\Details.cshtml" />
     <Content Include="Views\ChiTietDonHangs\Edit.cshtml" />
     <Content Include="Views\ChiTietDonHangs\Index.cshtml" />
-    <Content Include="Views\Admins\Create.cshtml" />
-    <Content Include="Views\Admins\Delete.cshtml" />
-    <Content Include="Views\Admins\Details.cshtml" />
-    <Content Include="Views\Admins\Edit.cshtml" />
-    <Content Include="Views\Admins\Index.cshtml" />
+    <Content Include="Views\Admins\NdtCreate.cshtml" />
+    <Content Include="Views\Admins\NdtDelete.cshtml" />
+    <Content Include="Views\Admins\NdtDetails.cshtml" />
+    <Content Include="Views\Admins\NdtEdit.cshtml" />
+    <Content Include="Views\Admins\NdtIndex.cshtml" />
     <Content Include="Views\GioHangs\Checkout.cshtml" />
     <Content Include="Views\GioHangs\CompleteCheckout.cshtml" />
     <Content Include="Views\Admins\ManageDonHangs.cshtml" />
+    <Content Include="Views\NguoiDungs\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -12,116 +12,116 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
 {
     public class AdminsController : Controller
     {
-        private Entities db = new Entities();
+        private Entities db = new Entities(); // Khởi tạo DbContext
 
         // GET: Admins
-        public ActionResult Index()
+       
+        public ActionResult NdtIndex()
         {
-            return View(db.Admins.ToList());
+            var admins = db.Admins.ToList(); // Lấy danh sách admin
+            var sanphams = db.SanPhams.ToList(); // Lấy danh sách sản phẩm
+            var model = new Tuple<IEnumerable<Admin>, IEnumerable<SanPham>>(admins, sanphams); // Tạo Tuple chứa danh sách admin và sản phẩm
+            return View(model); // Trả về view với model
         }
 
         // GET: Admins/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult NdtDetails(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Admin admin = db.Admins.Find(id);
+            Admin admin = db.Admins.Find(id); // Tìm admin theo ID
             if (admin == null)
             {
                 return HttpNotFound();
             }
-            return View(admin);
+            return View(admin); // Trả về view chi tiết admin
         }
 
         // GET: Admins/Create
-        public ActionResult Create()
+        public ActionResult NdtCreate()
         {
-            return View();
+            return View(); // Trả về view tạo admin mới
         }
 
         // POST: Admins/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,TenAdmin,Email,MatKhau,SoDienThoai,NgayTao")] Admin admin)
+        public ActionResult NdtCreate([Bind(Include = "ID,TenAdmin,Email,MatKhau,SoDienThoai,NgayTao")] Admin admin)
         {
             if (ModelState.IsValid)
             {
-                db.Admins.Add(admin);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                db.Admins.Add(admin); // Thêm admin mới vào DbSet
+                db.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+                return RedirectToAction(" NdtIndex"); // Chuyển hướng về trang danh sách admin
             }
 
-            return View(admin);
+            return View(admin); // Trả về view nếu có lỗi
         }
 
         // GET: Admins/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult NdtEdit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Admin admin = db.Admins.Find(id);
+            Admin admin = db.Admins.Find(id); // Tìm admin theo ID
             if (admin == null)
             {
                 return HttpNotFound();
             }
-            return View(admin);
+            return View(admin); // Trả về view chỉnh sửa admin
         }
 
         // POST: Admins/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,TenAdmin,Email,MatKhau,SoDienThoai,NgayTao")] Admin admin)
+        public ActionResult NdtEdit([Bind(Include = "ID,TenAdmin,Email,MatKhau,SoDienThoai,NgayTao")] Admin admin)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(admin).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                db.Entry(admin).State = EntityState.Modified; // Đánh dấu admin là đã được sửa đổi
+                db.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+                return RedirectToAction(" NdtIndex"); // Chuyển hướng về trang danh sách admin
             }
-            return View(admin);
+            return View(admin); // Trả về view nếu có lỗi
         }
 
         // GET: Admins/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult NdtDelete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Admin admin = db.Admins.Find(id);
+            Admin admin = db.Admins.Find(id); // Tìm admin theo ID
             if (admin == null)
             {
                 return HttpNotFound();
             }
-            return View(admin);
+            return View(admin); // Trả về view xác nhận xóa admin
         }
 
         // POST: Admins/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName(" NdtDelete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Admin admin = db.Admins.Find(id);
-            db.Admins.Remove(admin);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            Admin admin = db.Admins.Find(id); // Tìm admin theo ID
+            db.Admins.Remove(admin); // Xóa admin khỏi DbSet
+            db.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+            return RedirectToAction(" NdtIndex"); // Chuyển hướng về trang danh sách admin
         }
 
         protected override void Dispose(bool disposing)
         {
             if (disposing)
             {
-                db.Dispose();
+                db.Dispose(); // Giải phóng tài nguyên của DbContext
             }
-            base.Dispose(disposing);
+            base.Dispose(disposing); // Gọi phương thức Dispose của lớp cơ sở
         }
     }
 }

@@ -11,7 +11,7 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Models
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class DonHang
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,13 +19,14 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Models
         {
             this.ChiTietDonHangs = new HashSet<ChiTietDonHang>();
         }
-    
+
         public int ID { get; set; }
         public Nullable<int> ID_NguoiDung { get; set; }
         public decimal TongTien { get; set; }
         public string TrangThai { get; set; }
         public Nullable<System.DateTime> NgayDat { get; set; }
-    
+        public Nullable<System.DateTime> NgayTao { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
         public virtual NguoiDung NguoiDung { get; set; }

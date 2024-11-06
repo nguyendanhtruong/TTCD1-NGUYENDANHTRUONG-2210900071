@@ -2,27 +2,90 @@
 
 <h2>Danh sách sản phẩm</h2>
 
-<!-- Thanh lọc danh mục -->
-<form method="get" action="@Url.Action("Index", "SanPhams")">
-    <label for="DanhMucList">Lọc theo danh mục:</label>
-    @Html.DropDownList("categoryId", (SelectList)ViewBag.DanhMucList, "Tất cả", new { onchange = "this.form.submit();" })
-</form>
-
-<!-- Thêm phần CSS trực tiếp vào trang -->
 <style>
+    /* Tổng thể của trang */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #343a40;
+        padding: 15px 30px;
+        color: white;
+    }
+
+        .navbar .logo-filter {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        /* Lọc danh mục trong navbar */
+        .navbar form {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+            .navbar form label {
+                color: white;
+                font-size: 16px;
+                margin-right: 5px;
+            }
+
+            .navbar form select {
+                padding: 5px;
+                font-size: 16px;
+            }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+            .navbar ul li {
+                margin: 0 10px;
+            }
+
+                .navbar ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    transition: color 0.3s ease;
+                }
+
+                    .navbar ul li a:hover {
+                        color: #007bff;
+                    }
+
+    /* Header giỏ hàng */
     .header {
         display: flex;
-        justify-content: flex-end; /* Đẩy nội dung về bên phải */
-        margin-bottom: 20px; /* Khoảng cách dưới thanh tiêu đề */
+        justify-content: flex-end;
+        margin: 20px;
     }
 
         .header a {
             background-color: #007bff;
             color: white;
-            padding: 8px 15px; /* Kích thước nhỏ hơn */
+            padding: 8px 15px;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 14px; /* Kích thước chữ nhỏ hơn */
+            font-size: 14px;
             transition: background-color 0.3s ease;
         }
 
@@ -30,25 +93,27 @@
                 background-color: #0056b3;
             }
 
+    /* Danh sách sản phẩm */
     .product-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         gap: 20px;
         padding: 20px;
+        justify-content: center;
     }
 
     .product-item {
-        flex: 1 1 calc(25% - 20px);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        max-width: 280px;
+        background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 15px;
-        background-color: #fff;
+        margin: 10px;
     }
 
         .product-item img {
@@ -70,32 +135,34 @@
         }
 
         .product-info p {
-            font-size: 18px;
+            font-size: 16px;
             color: #777;
+            margin: 5px 0;
         }
 
         .product-info .category {
-            font-size: 16px;
+            font-size: 14px;
             color: #555;
             font-style: italic;
         }
 
-    /* Đặt các nút trên cùng một hàng */
+    /* Nút hành động */
     .product-actions {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        margin-top: 10px;
     }
 
         .product-actions a {
             background-color: #28a745;
             color: white;
-            padding: 8px; /* Kích thước nhỏ hơn */
+            padding: 8px;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 14px; /* Kích thước chữ nhỏ hơn */
+            font-size: 14px;
             text-align: center;
-            width: 48%; /* Chia đôi chiều rộng giữa hai nút */
+            width: 48%;
             transition: background-color 0.3s ease;
         }
 
@@ -103,6 +170,32 @@
                 background-color: #218838;
             }
 </style>
+
+<header>
+    <div class="navbar">
+        <div class="logo-filter">
+            <div class="logo">
+                <h1>Shop Quần Áo</h1>
+            </div>
+
+            <!-- Thanh lọc danh mục bên cạnh logo -->
+            <form method="get" action="@Url.Action("Index", "SanPhams")">
+                <label for="DanhMucList">Lọc theo danh mục:</label>
+                @Html.DropDownList("categoryId", (SelectList)ViewBag.DanhMucList, "Tất cả", new { onchange = "this.form.submit();" })
+            </form>
+        </div>
+
+        <nav>
+            <ul id="menu-list">
+                <li>@Html.ActionLink("Trang chủ", "Index", "Home", null, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Sản Phẩm", "Index", "SanPhams", null, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Giỏ hàng", "Index", "GioHangs", null, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Đơn Hàng", "Index", "DonHangs", null, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Đăng nhập", "Login", "NguoiDungs", null, new { @class = "nav-link" })</li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <!-- Hiển thị nút "Xem giỏ hàng" ở góc trên bên phải -->
 <div class="header">

@@ -5,8 +5,8 @@
 @if (Model != null)
 {
     <p>Đơn hàng của bạn đã được thanh toán thành công với mã đơn hàng: @Model.ID</p>
-    <p>Tổng tiền: @Model.TongTien.ToString("C")</p>
-    <p>Ngày đặt: @(Model.NgayDat.HasValue ? Model.NgayDat.Value.ToString("dd/MM/yyyy HH:mm:ss") : "N/A")</p>
+    <p>Tổng tiền: @Model.TongTien</p>
+    <p>Ngày đặt: @Model.NgayDat</p>
     <p>Trạng thái: @Model.TrangThai</p>
 
     <form action="@Url.Action("Details", "DonHangs", new { id = Model.ID })" method="post">

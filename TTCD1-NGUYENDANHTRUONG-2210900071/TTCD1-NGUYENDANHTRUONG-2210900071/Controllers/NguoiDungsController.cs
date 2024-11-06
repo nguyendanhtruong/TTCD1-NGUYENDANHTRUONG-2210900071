@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using TTCD1_NGUYENDANHTRUONG_2210900071.Models;
 
@@ -14,7 +12,7 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
     {
         private Entities db = new Entities();
 
-        // GET: NguoiDungs
+        // GET: NguoiDungs/Index
         public ActionResult Index()
         {
             return View(db.NguoiDungs.ToList());
@@ -27,116 +25,53 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             NguoiDung nguoiDung = db.NguoiDungs.Find(id);
             if (nguoiDung == null)
             {
                 return HttpNotFound();
             }
+
             return View(nguoiDung);
         }
 
-        // GET: NguoiDungs/Create (Đăng ký)
-        public ActionResult Create()
+        // GET: NguoiDungs/Register
+        public ActionResult Register()
         {
             return View();
         }
 
-        // POST: NguoiDungs/Create (Đăng ký)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,TenNguoiDung,Email,MatKhau,SoDienThoai,DiaChi")] NguoiDung nguoiDung)
+        public ActionResult Register([Bind(Include = "ID,TenNguoiDung,Email,MatKhau,SoDienThoai,DiaChi")] NguoiDung nguoiDung)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                // Kiểm tra xem email đã tồn tại trong hệ thống hay chưa
-                var existingUser = db.NguoiDungs.FirstOrDefault(u => u.Email == nguoiDung.Email);
-                if (existingUser != null)
-                {
-                    ViewBag.ErrorMessage = "Email này đã được sử dụng!";
-                    return View(nguoiDung);
-                }
+                return View(nguoiDung);
+            }
 
-                // Mã hóa mật khẩu trước khi lưu
+            try
+            {
                 nguoiDung.MatKhau = HashPassword(nguoiDung.MatKhau);
                 nguoiDung.NgayTao = DateTime.Now;
-                nguoiDung.VaiTro = "User"; // Mặc định vai trò là người dùng
+                nguoiDung.VaiTro = "User";  // Mặc định đăng ký là người dùng thường
 
                 db.NguoiDungs.Add(nguoiDung);
                 db.SaveChanges();
 
-                // Sử dụng TempData để truyền thông báo thành công sau khi đăng ký
                 TempData["SuccessMessage"] = "Đăng ký thành công! Vui lòng đăng nhập.";
-
-                return RedirectToAction("Login", "NguoiDungs");
+                return RedirectToAction("Login");
+            }
+            catch (DbUpdateException dbEx)
+            {
+                ViewBag.ErrorMessage = "Có lỗi xảy ra khi đăng ký: " + (dbEx.InnerException?.Message ?? dbEx.Message);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = "Có lỗi xảy ra khi đăng ký: " + ex.Message;
             }
 
             return View(nguoiDung);
-        }
-
-        // Hàm băm mật khẩu (Hash password)
-        private string HashPassword(string password)
-        {
-            using (var sha = new System.Security.Cryptography.SHA256Managed())
-            {
-                byte[] textData = System.Text.Encoding.UTF8.GetBytes(password);
-                byte[] hash = sha.ComputeHash(textData);
-                return BitConverter.ToString(hash).Replace("-", String.Empty);
-            }
-        }
-
-        // GET: NguoiDungs/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            NguoiDung nguoiDung = db.NguoiDungs.Find(id);
-            if (nguoiDung == null)
-            {
-                return HttpNotFound();
-            }
-            return View(nguoiDung);
-        }
-
-        // POST: NguoiDungs/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,TenNguoiDung,Email,MatKhau,SoDienThoai,DiaChi,VaiTro,NgayTao")] NguoiDung nguoiDung)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(nguoiDung).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(nguoiDung);
-        }
-
-        // GET: NguoiDungs/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            NguoiDung nguoiDung = db.NguoiDungs.Find(id);
-            if (nguoiDung == null)
-            {
-                return HttpNotFound();
-            }
-            return View(nguoiDung);
-        }
-
-        // POST: NguoiDungs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            NguoiDung nguoiDung = db.NguoiDungs.Find(id);
-            db.NguoiDungs.Remove(nguoiDung);
-            db.SaveChanges();
-            return RedirectToAction("Index");
         }
 
         // GET: NguoiDungs/Login
@@ -148,32 +83,110 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
         // POST: NguoiDungs/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(string Email, string MatKhau)
+        public ActionResult Login(string email, string matKhau)
         {
-            // Tìm người dùng dựa trên email
-            var hashedPassword = HashPassword(MatKhau);
-            var user = db.NguoiDungs.FirstOrDefault(u => u.Email == Email && u.MatKhau == hashedPassword);
+            var hashedPassword = HashPassword(matKhau);
 
-            if (user != null)
+            try
             {
-                // Đăng nhập thành công
-                Session["UserID"] = user.ID;
-                Session["UserName"] = user.TenNguoiDung;
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
-                // Đăng nhập thất bại
+                // Tìm người dùng với email và mật khẩu phù hợp
+                var user = db.NguoiDungs.FirstOrDefault(u => u.Email == email && u.MatKhau == hashedPassword);
+                if (user != null)
+                {
+                    SetUserSession(user);
+
+                    // Phân quyền dựa trên vai trò của người dùng
+                    if (user.VaiTro == "Admin")
+                    {
+                        return RedirectToAction("Dashboard", "Admin");  // Chuyển hướng đến trang Admin
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");  // Chuyển hướng đến trang người dùng thường
+                    }
+                }
+
                 ViewBag.ErrorMessage = "Email hoặc mật khẩu không đúng.";
-                return View();
             }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = "Có lỗi xảy ra khi đăng nhập: " + ex.Message;
+            }
+
+            return View();
         }
 
-        // Đăng xuất
+        // Đăng xuất người dùng
         public ActionResult Logout()
         {
             Session.Clear();
             return RedirectToAction("Login");
+        }
+
+        // GET: NguoiDungs/Edit/5
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            NguoiDung nguoiDung = db.NguoiDungs.Find(id);
+            if (nguoiDung == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(nguoiDung);
+        }
+
+        // POST: NguoiDungs/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "ID,TenNguoiDung,Email,MatKhau,SoDienThoai,DiaChi,VaiTro,NgayTao")] NguoiDung nguoiDung)
+        {
+            if (ModelState.IsValid)
+            {
+                if (!string.IsNullOrEmpty(nguoiDung.MatKhau))
+                {
+                    nguoiDung.MatKhau = HashPassword(nguoiDung.MatKhau);
+                }
+
+                db.Entry(nguoiDung).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(nguoiDung);
+        }
+
+        // GET: NguoiDungs/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            NguoiDung nguoiDung = db.NguoiDungs.Find(id);
+            if (nguoiDung == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(nguoiDung);
+        }
+
+        // POST: NguoiDungs/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            NguoiDung nguoiDung = db.NguoiDungs.Find(id);
+            db.NguoiDungs.Remove(nguoiDung);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
@@ -183,6 +196,28 @@ namespace TTCD1_NGUYENDANHTRUONG_2210900071.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        // Hàm băm mật khẩu (Hash password)
+        private string HashPassword(string password)
+        {
+            if (string.IsNullOrEmpty(password))
+                throw new ArgumentException("Mật khẩu không được để trống.");
+
+            using (var sha = new System.Security.Cryptography.SHA256Managed())
+            {
+                byte[] textData = System.Text.Encoding.UTF8.GetBytes(password);
+                byte[] hash = sha.ComputeHash(textData);
+                return BitConverter.ToString(hash).Replace("-", string.Empty);
+            }
+        }
+
+        // Thiết lập phiên người dùng
+        private void SetUserSession(NguoiDung user)
+        {
+            Session["UserID"] = user.ID;
+            Session["UserName"] = user.TenNguoiDung;
+            Session["UserRole"] = user.VaiTro;
         }
     }
 }
