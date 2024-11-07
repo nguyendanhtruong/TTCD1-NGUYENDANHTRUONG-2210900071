@@ -1,0 +1,13 @@
+﻿@model K22CNT4_NGUYENDANHTRUONG_2210900071.Models.NguoiDung
+
+<h2>Delete Confirmation</h2>
+
+<p>Bạn có chắc chắn muốn xóa người dùng với ID @Model.ID không?</p>
+
+@using (Html.BeginForm("Delete", "NguoiDungs", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.Hidden("id", Model.ID)
+    <input type="submit" value="Delete" />
+    <a href="@Url.Action("Index", "NguoiDungs")">Cancel</a>
+}

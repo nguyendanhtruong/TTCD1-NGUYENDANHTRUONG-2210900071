@@ -1,0 +1,118 @@
+﻿@model IEnumerable<K22CNT4_NGUYENDANHTRUONG_2210900071.Models.GioHang>
+
+<h2>Giỏ hàng của bạn</h2>
+
+<!-- Thêm CSS cho giỏ hàng -->
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    td img {
+        border-radius: 5px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    a {
+        background-color: #dc3545;
+        color: white;
+        padding: 8px 12px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        a:hover {
+            background-color: #c82333;
+        }
+
+    td a {
+        margin-right: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+    input[type="number"] {
+        width: 60px;
+        padding: 6px;
+        text-align: center;
+    }
+
+    td {
+        vertical-align: middle;
+        text-align: center;
+    }
+</style>
+<a href="@Url.Action("NdtIndex", "SanPhams")" class="btn btn-primary">Quay Lại Trang Sản Phẩm </a>
+
+<!-- Giao diện hiển thị giỏ hàng -->
+@if (Model != null && Model.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@Url.Content("~/Images/" + item.SanPham.HinhAnh)" alt="@item.SanPham.TenSanPham" style="width: 100px;" />
+                    </td>
+                    <td>@item.SanPham.TenSanPham</td>
+                    <td>
+                        <form action="@Url.Action("UpdateCart", "GioHangs")" method="post">
+                            <input type="hidden" name="id" value="@item.ID_SanPham" />
+                            <input type="number" name="quantity" value="@item.SoLuong" min="1" />
+                            <input type="submit" value="Cập nhật" />
+                        </form>
+                    </td>
+                    <td>@item.SanPham.Gia.ToString("C")</td>
+                    <td>
+
+                        <a href="@Url.Action("RemoveFromCart", "GioHangs", new { id = item.ID_SanPham })">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a href="@Url.Action("NdtCheckout", "GioHangs")">Thanh toán</a>
+}
+else
+{
+    <p>Giỏ hàng của bạn hiện tại trống!</p>
+}

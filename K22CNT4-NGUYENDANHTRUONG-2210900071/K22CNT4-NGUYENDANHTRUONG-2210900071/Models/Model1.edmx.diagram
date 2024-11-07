@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9f88aa21125242ea9e75590c1d52dc6f" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Admin" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ChiTietDonHang" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DanhMuc" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DonHang" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.GioHang" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NguoiDung" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SanPham" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__ChiTietDo__ID_Do__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__ChiTietDo__ID_Sa__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__SanPham__ID_Danh__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__DonHang__ID_Nguo__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__GioHang__ID_Nguo__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__GioHang__ID_SanP__4316F928" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
