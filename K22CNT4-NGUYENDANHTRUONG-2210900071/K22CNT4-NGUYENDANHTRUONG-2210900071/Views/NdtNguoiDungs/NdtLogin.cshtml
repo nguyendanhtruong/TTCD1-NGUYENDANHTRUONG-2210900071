@@ -1,0 +1,131 @@
+﻿@model K22CNT4_NGUYENDANHTRUONG_2210900071.Models.NguoiDung
+
+@{
+    ViewBag.Title = "Đăng Nhập";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+            .form-group input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+
+                .form-group input[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+
+    .alert {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f8d7da;
+        color: #721c24;
+        border-radius: 4px;
+        border: 1px solid #f5c6cb;
+    }
+
+    .container p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+        .container p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .container p a:hover {
+                text-decoration: underline;
+            }
+</style>
+
+<div class="container">
+    <h2>Đăng Nhập</h2>
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    @using (Html.BeginForm("NdtLogin", "NdtNguoiDungs", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email", required = "required" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.MatKhau, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.MatKhau, new { @class = "form-control", placeholder = "Mật Khẩu", required = "required" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Vai Trò", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Role", new SelectList(new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Người dùng", Value = "User" },
+                    new SelectListItem { Text = "Admin", Value = "Admin" }
+                }, "Value", "Text"), "Chọn vai trò", new { @class = "form-control", required = "required" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Đăng Nhập" class="btn btn-default" />
+            </div>
+        </div>
+    }
+
+    <div>
+        <p>Bạn chưa có tài khoản? <a href="@Url.Action("NdtRegister", "NdtNguoiDungs")">Đăng ký ngay</a></p>
+    </div>
+</div>

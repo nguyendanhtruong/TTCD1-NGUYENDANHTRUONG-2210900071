@@ -1,0 +1,52 @@
+﻿@model IEnumerable<K22CNT4_NGUYENDANHTRUONG_2210900071.Models.ChiTietDonHang>
+
+@{
+    ViewBag.Title = "NdtIndex";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "NdtCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonHang.TrangThai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SanPham.TenSanPham)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonHang.TrangThai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SanPham.TenSanPham)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "NdtEdit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "NdtDetails", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "NdtDelete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>

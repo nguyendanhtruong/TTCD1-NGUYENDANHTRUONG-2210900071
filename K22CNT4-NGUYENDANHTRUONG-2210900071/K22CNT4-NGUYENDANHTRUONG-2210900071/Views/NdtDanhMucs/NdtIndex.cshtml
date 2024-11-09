@@ -1,0 +1,36 @@
+﻿@model IEnumerable<K22CNT4_NGUYENDANHTRUONG_2210900071.Models.DanhMuc>
+@{
+    ViewBag.Title = "Danh sách danh mục";
+}
+
+<h2>Danh sách danh mục</h2>
+
+<p>
+    @Html.ActionLink("Thêm danh mục mới", "NdtCreate", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên danh mục</th>
+            <th>Mô tả</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.TenDanhMuc</td>
+                <td>@item.MoTa</td>
+                <td>
+                    @Html.ActionLink("Chi tiết", "NdtDetails", new { id = item.ID }) |
+                    @Html.ActionLink("Sửa", "NdtEdit", new { id = item.ID }) |
+                    @Html.ActionLink("Xóa", "NdtDelete", new { id = item.ID }, new { @class = "text-danger" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

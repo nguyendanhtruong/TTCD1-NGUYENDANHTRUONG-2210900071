@@ -1,0 +1,56 @@
+﻿@model K22CNT4_NGUYENDANHTRUONG_2210900071.Models.NguoiDung
+
+@{
+    ViewBag.Title = "Đăng ký Người Dùng";
+}
+
+<h2>Đăng ký Người Dùng</h2>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Thông tin tài khoản</h4>
+        <hr />
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TenNguoiDung, new { @class = "control-label" })
+            @Html.EditorFor(model => model.TenNguoiDung, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TenNguoiDung, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "control-label" })
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MatKhau, new { @class = "control-label" })
+            @Html.PasswordFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Vai Trò", new { @class = "control-label" })
+            <div>
+                @Html.DropDownList("isAdmin", new SelectList(new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Người dùng", Value = "false" },
+                    new SelectListItem { Text = "Admin", Value = "true" }
+                }, "Value", "Text"), "Chọn vai trò", new { @class = "form-control", required = "required" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Đăng ký" class="btn btn-primary" />
+        </div>
+    </div>
+}
+
+<p>Bạn đã có tài khoản? @Html.ActionLink("Đăng nhập", "NdtLogin")</p>

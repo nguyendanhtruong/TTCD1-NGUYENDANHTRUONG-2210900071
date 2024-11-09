@@ -1,0 +1,48 @@
+﻿@model IEnumerable<K22CNT4_NGUYENDANHTRUONG_2210900071.Models.GioHang>
+
+<h2>Giỏ hàng của bạn</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@Url.Content("~/Images/" + item.SanPham.HinhAnh)" alt="@item.SanPham.TenSanPham" class="img-fluid" style="width: 100px;" />
+                    </td>
+                    <td>@item.SanPham.TenSanPham</td>
+                    <td>
+                        <form action="@Url.Action("UpdateCart", "GioHangs")" method="post" class="form-inline">
+                            <input type="hidden" name="id" value="@item.ID_SanPham" />
+                            <input type="number" name="quantity" value="@item.SoLuong" min="1" class="form-control" style="width: 80px;" />
+                            <input type="submit" value="Cập nhật" class="btn btn-primary btn-sm ml-2" />
+                        </form>
+                    </td>
+                    <td>@item.SanPham.Gia.ToString("N0") VND</td>
+                    <td>
+                        <a href="@Url.Action("RemoveFromCart", "NdtGioHangs", new { id = item.ID_SanPham })" class="btn btn-danger btn-sm">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-right">
+        <a href="@Url.Action("NdtCheckout", "NdtGioHangs")" class="btn btn-success btn-lg">Thanh toán</a>
+    </div>
+}
+else
+{
+    <p class="alert alert-warning">Giỏ hàng của bạn hiện tại trống!</p>
+}

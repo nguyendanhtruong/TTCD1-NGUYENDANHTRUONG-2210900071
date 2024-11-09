@@ -1,0 +1,28 @@
+﻿﻿@model K22CNT4_NGUYENDANHTRUONG_2210900071.Models.DonHang
+
+<h2>Xác nhận thanh toán</h2>
+
+@if (Model != null)
+{
+    <p>Đơn hàng của bạn đã được thanh toán thành công với mã đơn hàng: @Model.ID</p>
+    <p>Tổng tiền: @Model.TongTien</p>
+    <p>Ngày đặt: @Model.NgayDat</p>
+    <p>Trạng thái: @Model.TrangThai</p>
+
+    <!-- Thêm dropdown để chọn trạng thái -->
+    <form action="@Url.Action("UpdateStatus", "NdtDonHangs", new { id = Model.ID })" method="post">
+        @Html.AntiForgeryToken()
+        <label for="TrangThai">Chọn trạng thái:</label>
+        <select name="TrangThai" id="TrangThai">
+            <option value="Đang xử lý" @(Model.TrangThai == "Đang xử lý" ? "selected" : "")>Đang xử lý</option>
+            <option value="Đã hoàn thành" @(Model.TrangThai == "Đã hoàn thành" ? "selected" : "")>Đã hoàn thành</option>
+            <option value="Đã hủy" @(Model.TrangThai == "Đã hủy" ? "selected" : "")>Đã hủy</option>
+        </select>
+        <br />
+        <input type="submit" value="Cập nhật trạng thái" />
+    </form>
+}
+else
+{
+    <p>Không tìm thấy thông tin đơn hàng!</p>
+}

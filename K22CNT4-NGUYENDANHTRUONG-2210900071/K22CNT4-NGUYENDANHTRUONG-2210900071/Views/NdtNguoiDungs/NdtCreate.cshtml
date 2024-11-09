@@ -1,0 +1,65 @@
+﻿@model K22CNT4_NGUYENDANHTRUONG_2210900071.Models.NguoiDung
+
+@{
+    ViewBag.Title = "Đăng ký Người Dùng";
+}
+
+<h2>Đăng ký Người Dùng</h2>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Thông tin tài khoản</h4>
+        <hr />
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TenNguoiDung, new { @class = "control-label" })
+            @Html.EditorFor(model => model.TenNguoiDung, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TenNguoiDung, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "control-label" })
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MatKhau, new { @class = "control-label" })
+            @Html.PasswordFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            <label>Vai Trò</label>
+            @if (ViewBag.IsAdmin != null && (bool)ViewBag.IsAdmin) // Kiểm tra xem ViewBag.IsAdmin có giá trị và là true
+            {
+                <div>
+                    <input type="radio" name="isAdmin" value="true" id="registerAdmin" />
+                    <label for="registerAdmin">Đăng ký Admin</label>
+                </div>
+                <div>
+                    <input type="radio" name="isAdmin" value="false" id="registerUser" checked="checked" />
+                    <label for="registerUser">Đăng ký Người Dùng</label>
+                </div>
+            }
+            else
+            {
+                <p>Vai trò của bạn: Người Dùng</p>
+                @Html.Hidden("isAdmin", "false")// Không cho phép chọn admin
+            }
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Đăng ký" class="btn btn-primary" />
+        </div>
+    </div>
+}
+
+<p>Bạn đã có tài khoản? @Html.ActionLink("Đăng nhập", "NdtLogin")</p>
