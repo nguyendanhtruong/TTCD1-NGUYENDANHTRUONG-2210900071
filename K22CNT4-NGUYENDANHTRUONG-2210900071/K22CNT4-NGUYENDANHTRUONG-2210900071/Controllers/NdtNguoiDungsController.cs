@@ -24,7 +24,7 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         // GET: NguoiDungs/NdtDetails/5
         public ActionResult NdtDetails(int? id)
         {
-            if (id == null)
+            if (!id.HasValue)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
@@ -127,7 +127,7 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         // GET: NguoiDungs/NdtEdit/5
         public ActionResult NdtEdit(int? id)
         {
-            if (id == null)
+            if (!id.HasValue)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
@@ -170,7 +170,7 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         // GET: NguoiDungs/NdtDelete/5
         public ActionResult NdtDelete(int? id)
         {
-            if (id == null)
+            if (!id.HasValue)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }

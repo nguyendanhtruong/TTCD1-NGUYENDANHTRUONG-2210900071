@@ -21,7 +21,7 @@
                 <td>@donHang.NgayDat </td>
                 <td>@donHang.ID_NguoiDung</td>
                 <td>@donHang.TrangThai</td>
-                <td>@donHang.TongTien.ToString("C0")</td> <!-- Hiển thị tổng tiền với định dạng tiền tệ -->
+                <td>@donHang.TongTien.ToString("N0")VND</td> <!-- Hiển thị tổng tiền với định dạng tiền tệ -->
                 <td>
                     @Html.ActionLink("Chi Tiết", "NdtDetails", new { id = donHang.ID }, new { @class = "btn btn-info btn-sm" }) |
                     @Html.ActionLink("Sửa", "NdtEdit", new { id = donHang.ID }, new { @class = "btn btn-warning btn-sm" }) |
