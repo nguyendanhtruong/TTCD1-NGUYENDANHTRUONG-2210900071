@@ -15,14 +15,22 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         private readonly Entities db = new Entities();
 
         // GET: NdtSanPhams
-        public ActionResult NdtIndex(int? categoryId)
+        public ActionResult NdtIndex(int? categoryId, string search)
         {
             ViewBag.DanhMucList = new SelectList(db.DanhMucs.ToList(), "ID", "TenDanhMuc");
 
             var sanPhams = db.SanPhams.Include(s => s.DanhMuc);
+
+            // Lọc theo categoryId nếu có
             if (categoryId.HasValue)
             {
                 sanPhams = sanPhams.Where(s => s.ID_DanhMuc == categoryId.Value);
+            }
+
+            // Tìm kiếm theo từ khóa nếu có
+            if (!string.IsNullOrEmpty(search))
+            {
+                sanPhams = sanPhams.Where(s => s.TenSanPham.Contains(search) || s.MoTa.Contains(search));
             }
 
             return View(sanPhams.ToList());
@@ -54,28 +62,24 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Xử lý ảnh nếu có
                 if (HinhAnh != null && HinhAnh.ContentLength > 0)
                 {
-                    string fileName = Path.GetFileName(HinhAnh.FileName);
-                    string folderPath = Server.MapPath("~/Images");
+                    // Tạo tên file duy nhất
+                    string fileName = Path.GetFileNameWithoutExtension(HinhAnh.FileName);
+                    string fileExtension = Path.GetExtension(HinhAnh.FileName);
+                    string uniqueFileName = fileName + "_" + Guid.NewGuid().ToString() + fileExtension;
 
+                    string folderPath = Server.MapPath("~/Images");
                     if (!Directory.Exists(folderPath))
                     {
                         Directory.CreateDirectory(folderPath);
                     }
 
-                    string filePath = Path.Combine(folderPath, fileName);
-
-                    // Đảm bảo tên file là duy nhất
-                    int count = 1;
-                    while (System.IO.File.Exists(filePath))
-                    {
-                        fileName = Path.GetFileNameWithoutExtension(HinhAnh.FileName) + $"_{count++}" + Path.GetExtension(HinhAnh.FileName);
-                        filePath = Path.Combine(folderPath, fileName);
-                    }
-
+                    string filePath = Path.Combine(folderPath, uniqueFileName);
                     HinhAnh.SaveAs(filePath);
-                    sanPham.HinhAnh = fileName;
+
+                    sanPham.HinhAnh = uniqueFileName;
                 }
 
                 db.SanPhams.Add(sanPham);
@@ -108,10 +112,38 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         // POST: NdtSanPhams/NdtEdit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult NdtEdit([Bind(Include = "ID,TenSanPham,MoTa,Gia,SoLuong,HinhAnh,ID_DanhMuc")] SanPham sanPham)
+        public ActionResult NdtEdit([Bind(Include = "ID,TenSanPham,MoTa,Gia,SoLuong,HinhAnh,ID_DanhMuc")] SanPham sanPham, HttpPostedFileBase HinhAnh)
         {
             if (ModelState.IsValid)
             {
+                if (HinhAnh != null && HinhAnh.ContentLength > 0)
+                {
+                    string fileName = Path.GetFileNameWithoutExtension(HinhAnh.FileName);
+                    string fileExtension = Path.GetExtension(HinhAnh.FileName);
+                    string uniqueFileName = fileName + "_" + Guid.NewGuid().ToString() + fileExtension;
+
+                    string folderPath = Server.MapPath("~/Images");
+                    if (!Directory.Exists(folderPath))
+                    {
+                        Directory.CreateDirectory(folderPath);
+                    }
+
+                    string filePath = Path.Combine(folderPath, uniqueFileName);
+                    HinhAnh.SaveAs(filePath);
+
+                    // Xóa ảnh cũ nếu có
+                    if (!string.IsNullOrEmpty(sanPham.HinhAnh))
+                    {
+                        string oldFilePath = Path.Combine(folderPath, sanPham.HinhAnh);
+                        if (System.IO.File.Exists(oldFilePath))
+                        {
+                            System.IO.File.Delete(oldFilePath);
+                        }
+                    }
+
+                    sanPham.HinhAnh = uniqueFileName;
+                }
+
                 db.Entry(sanPham).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("NdtIndex");
@@ -146,6 +178,16 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
             var sanPham = db.SanPhams.Find(id);
             if (sanPham != null)
             {
+                string folderPath = Server.MapPath("~/Images");
+                if (!string.IsNullOrEmpty(sanPham.HinhAnh))
+                {
+                    string filePath = Path.Combine(folderPath, sanPham.HinhAnh);
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+
                 db.SanPhams.Remove(sanPham);
                 db.SaveChanges();
             }
@@ -191,4 +233,3 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         }
     }
 }
-

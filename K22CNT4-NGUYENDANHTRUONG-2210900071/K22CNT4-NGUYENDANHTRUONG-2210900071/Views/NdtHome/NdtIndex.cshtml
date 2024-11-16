@@ -5,320 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ - Shop Quần Áo Online</title>
-    <link rel="stylesheet" href="~/css/StyleSheet1.css">
-    <style>
-      /* Cài đặt chung */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-}
-
-/* Thanh điều hướng */
-header {
-    background-color: #2d2d2d;
-    color: white;
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.navbar .logo h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.navbar nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar nav ul li {
-    margin: 0 15px;
-}
-
-.navbar nav ul li a {
-    color: #f8f9fa;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 15px;
-    transition: background-color 0.3s;
-}
-
-.navbar nav ul li a:hover {
-    background-color: #555;
-    border-radius: 4px;
-}
-
-.hamburger {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-/* Banner */
-.banner {
-    overflow: hidden;
-    position: relative;
-    width: 90%;
-    max-width: 1200px;
-    height: 400px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.banner-slider {
-    display: flex;
-    transition: transform 1s ease;
-    width: 100%;
-    height: 100%;
-}
-
-.banner-slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-/* Danh mục và sản phẩm */
-.categories, .featured-products {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
-
-.categories h2, .featured-products h2 {
-    text-align: center;
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.category-list, .product-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.category-item, .product-item {
-    background-color: white;
-    padding: 20px;
-    margin: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
-    width: calc(25% - 20px);
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.category-item:hover, .product-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.category-item img, .product-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product-item h3 {
-    margin: 15px 0;
-    color: #333;
-}
-
-.product-item p {
-    color: #777;
-    font-weight: bold;
-}
-
-.product-item button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.product-item button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #2d2d2d;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    font-size: 14px;
-}
-
-footer a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Media Queries cho responsive */
-@**@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .category-item, .product-item {
-        width: calc(100% - 20px);
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    #menu-list {
-        display: none;
-        flex-direction: column;
-    }
-
-    #menu-list li {
-        margin: 10px 0;
-    }
-}
-
-@**@media (max-width: 1024px) and (min-width: 769px) {
-    .category-item, .product-item {
-        width: calc(50% - 20px);
-    }
-}
-
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
 
 <body>
+
     <!-- Thanh điều hướng -->
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <h1>Shop Quần Áo</h1>
+    <header class="bg-dark text-white shadow-sm">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <h1 class="h3 mb-0">Shop Quần Áo</h1>
+                <nav class="d-flex align-items-center">
+                    <ul class="nav" id="menu-list">
+                        <li class="nav-item">
+                            @Html.ActionLink("Trang chủ", "NdtIndex", "NdtHome", new { area = "" }, new { @class = "nav-link text-white" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Sản Phẩm", "NdtIndex", "NdtSanPhams", new { area = "" }, new { @class = "nav-link text-white" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Giỏ hàng", "NdtIndex", "NdtGioHangs", new { area = "" }, new { @class = "nav-link text-white" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Đăng nhập", "NdtLogin", "NdtNguoiDungs", new { area = "" }, new { @class = "nav-link text-white" })
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler ms-3 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu-list">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
             </div>
-            <nav>
-                <ul id="menu-list">
-                    <li>@Html.ActionLink("Trang chủ", "NdtIndex", "NdtHome", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Sản Phẩm", "NdtIndex", "NdtSanPhams", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Giỏ hàng", "NdtIndex", "NdtGioHangs", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Đăng nhập", "NdtLogin", "NdtNguoiDungs", new { area = "" }, new { @class = "nav-link" })</li>
-
-                </ul>
-
-                <div class="hamburger" id="hamburger-menu">
-                    &#9776;
-                </div>
-            </nav>
         </div>
     </header>
 
     <!-- Banner quảng cáo -->
-    <section class="banner">
-        <div class="banner-slider">
-            <!-- Bộ ảnh 1 -->
-            <img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_1_img.jpg?v=549" alt="Banner Khuyến Mãi">
-            <img src="https://file.hstatic.net/1000026602/collection/banner_desktop_td_241007_af7ed3a89a5d4a958d3604eccc8cbed1.jpg" alt="Banner Khuyến Mãi">
-            <img src="https://img.pikbest.com/origin/06/43/50/933pIkbEsT7AG.jpg!w700wp" alt="Banner Khuyến Mãi">
-            <img src="https://city89.com/wp-content/uploads/2023/05/banner-city89-mobile.jpg" alt="Banner Khuyến Mãi">
-            <img src="https://lados.vn/wp-content/uploads/2024/08/Lados-quan-jeans-nam.jpg" alt="Banner Khuyến Mãi">
-
-            <!-- Bộ ảnh 2 (giống ảnh 1 để tạo hiệu ứng lặp liên tục) -->
-            <img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_1_img.jpg?v=549" alt="Banner Khuyến Mãi">
-            <img src="https://file.hstatic.net/1000026602/collection/banner_desktop_td_241007_af7ed3a89a5d4a958d3604eccc8cbed1.jpg" alt="Banner Khuyến Mãi">
-            <img src="https://img.pikbest.com/origin/06/43/50/933pIkbEsT7AG.jpg!w700wp" alt="Banner Khuyến Mãi">
-            <img src="https://city89.com/wp-content/uploads/2023/05/banner-city89-mobile.jpg" alt="Banner Khuyến Mãi">
-            <img src="https://lados.vn/wp-content/uploads/2024/08/Lados-quan-jeans-nam.jpg" alt="Banner Khuyến Mãi">
+    <section class="container my-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_1_img.jpg?v=549" class="d-block w-100" alt="Banner Khuyến Mãi">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://file.hstatic.net/1000026602/collection/banner_desktop_td_241007_af7ed3a89a5d4a958d3604eccc8cbed1.jpg" class="d-block w-100" alt="Banner Khuyến Mãi">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.pikbest.com/origin/06/43/50/933pIkbEsT7AG.jpg!w700wp" class="d-block w-100" alt="Banner Khuyến Mãi">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://city89.com/wp-content/uploads/2023/05/banner-city89-mobile.jpg" class="d-block w-100" alt="Banner Khuyến Mãi">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
+        <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-primary mt-3">Bắt Đầu Mua Sắm</a>
     </section>
-    <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-primary">Bắt Đầu Mua Sắm </a>
 
     <!-- Sản phẩm nổi bật -->
-    <section class="featured-products">
-        <h2>Sản phẩm nổi bật</h2>
-        <div class="product-list" id="product-slider">
-            <div class="product-item">
-                <img src="https://aoxuanhe.com/upload/product/axh-003/ao-so-mi-hang-hieu-den-nam-tinh-0.jpg" alt="Áo sơ mi trắng" loading="lazy">
-                <h3>Áo sơ mi</h3>
-                <p>Giá: 25,000 VNĐ</p>
-                <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
+    <section class="featured-products container my-5">
+        <h2 class="text-center">Sản phẩm nổi bật</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="https://aoxuanhe.com/upload/product/axh-003/ao-so-mi-hang-hieu-den-nam-tinh-0.jpg" class="card-img-top" alt="Áo sơ mi">
+                    <div class="card-body">
+                        <h5 class="card-title">Áo sơ mi</h5>
+                        <p class="card-text">Giá: 25,000 VNĐ</p>
+                        <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
+                    </div>
+                </div>
             </div>
-            <div class="product-item">
-                <img src="https://product.hstatic.net/200000325151/product/zeka-cac-mau-jean-nam-7_ba27b638826543d7b7c95d00862e4740.png" alt="Quần Jean đen" loading="lazy">
-                <h3>Quần Jean </h3>
-                <p>Giá: 30,000 VNĐ</p>
-                <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="https://product.hstatic.net/200000325151/product/zeka-cac-mau-jean-nam-7_ba27b638826543d7b7c95d00862e4740.png" class="card-img-top" alt="Quần Jean">
+                    <div class="card-body">
+                        <h5 class="card-title">Quần Jean</h5>
+                        <p class="card-text">Giá: 30,000 VNĐ</p>
+                        <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
+                    </div>
+                </div>
             </div>
-            <div class="product-item">
-                <img src="https://dongphuchaianh.com/wp-content/uploads/2022/04/ao-thun-hinh-mat-he-ket-hop-cung-quan-short.jpg" alt="Áo Phông" loading="lazy">
-                <h3>Áo Phông</h3>
-                <p>Giá: 20,000 VNĐ</p>
-                <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="https://dongphuchaianh.com/wp-content/uploads/2022/04/ao-thun-hinh-mat-he-ket-hop-cung-quan-short.jpg" class="card-img-top" alt="Áo Phông">
+                    <div class="card-body">
+                        <h5 class="card-title">Áo Phông</h5>
+                        <p class="card-text">Giá: 20,000 VNĐ</p>
+                        <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-primary">Bắt Đầu Mua</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Tin tức -->
+    <section class="container my-5">
+        <h2 class="text-center">Tin tức</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@Url.Content("~/Images/anhtintuc1.gif")" class="card-img-top" alt="Tin tức 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ưu Đãi</h5>
+                        <p class="card-text">
+                            Vào tháng 11 năm 2024, bạn có thể tận dụng các chương trình khuyến mãi như Tháng khuyến mãi Hà Nội và Vietnam Grand Sale. 
+                            Các sự kiện này sẽ có nhiều ưu đãi giảm giá lớn, trong đó có thời trang, giúp kích cầu tiêu dùng và kích thích các hoạt động mua sắm cả trực tuyến và trực tiếp.
+                            Tháng khuyến mãi Hà Nội diễn ra trong suốt tháng 11,
+                            với các chương trình giảm giá lên đến 50%, đặc biệt vào cuối tuần vàng (18-19 tháng 11). 
+                            Cũng trong thời gian này, chương trình Vietnam Grand Sale diễn ra từ ngày 15 tháng 11 đến 22 tháng 12, 
+                            cung cấp nhiều ưu đãi hấp dẫn cho các mặt hàng, bao gồm quần áo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@Url.Content("~/Images/anhtintuc2.jpg")" class="card-img-top" alt="Tin tức 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bộ Sưu Tập </h5>
+                        <p class="card-text">
+                            Bộ sưu tập mới nhất của Stin Clothing mang đến những thiết kế thời trang hiện đại và phong cách đường phố,
+                            kết hợp giữa sự tinh tế và các chi tiết táo bạo. Những món đồ trong bộ sưu tập này có xu hướng tối giản, 
+                            với các đường cắt tinh tế và sử dụng chất liệu mới mẻ, mang lại cảm giác thoải mái nhưng vẫn đầy tính thời trang.
+                            Một số món đồ đặc trưng là những kiểu dáng asymmetrical và những chi tiết nổi bật, giúp tạo nên một phong cách vừa cổ điển vừa đương đại.
+                            Để tìm hiểu thêm hoặc xem những bộ sưu tập mới nhất của Stin, bạn có thể tham khảo trang mạng xã hội chính thức của họ hoặc các website chuyên về thời trang
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@Url.Content("~/Images/tintuc.jpg")" class="card-img-top" alt="Tin tức 3">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Nguồn hàng quần áo Ulzzang giá sỉ tận xưởng Trung Quốc
+                        </h5>
+                        <p class="card-text">Kinh doanh quần áo là lĩnh vực nhận được sự tin tưởng của nhiều người.
+                        Kinh doanh quần áo khi có được những quyết định đầu tư
+                        đúng đắn và hợp lý đảm bảo khoản tiền bỏ ra có thể mang lại lợi nhuận cao. 
+                        Quần áo Ulzzang nhận được
+                        sự quan tâm lớn, với lượng người mua ngày càng tăng cao. 
+                        Có cách để tìm kiếm nguồn hàng sỉ quần áo Ulzzang chất lượng để nhập hàng, 
+                        kinh doanh diễn ra thuận lợi như mỗi người mong muốn..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Footer -->
-    <footer>
-        SHOP BÁN QUẦN ÁO THỜI TRANG<br>
-        NGUYỄN DANH TRƯỜNG <br>
-        SỐ ĐIỆN THOẠI HỖ TRỢ: 0797475264 <br>
-        EMAIL: truong626215@gmail.com
+    <footer class="bg-dark text-white text-center py-3">
+        <div>SHOP BÁN QUẦN ÁO THỜI TRANG</div>
+        <div>NGUYỄN DANH TRƯỜNG</div>
+        <div>SỐ ĐIỆN THOẠI HỖ TRỢ: 0797475264</div>
+        <div>EMAIL: truong626215@gmail.com</div>
     </footer>
 
-    <script>
-        // JavaScript để chuyển động banner
-        const bannerSlider = document.querySelector('.banner-slider');
-        let currentIndex = 0;
-
-        function slideBanners() {
-            currentIndex++;
-            if (currentIndex >= bannerSlider.children.length) {
-                currentIndex = 0;
-            }
-            bannerSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        setInterval(slideBanners, 4000); // Chuyển banner sau mỗi 3 giây
-
-        // JavaScript cho nút hamburger trên mobile
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const menuList = document.getElementById('menu-list');
-
-        hamburgerMenu.addEventListener('click', function () {
-            menuList.style.display = menuList.style.display === 'flex' ? 'none' : 'flex';
-        });
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

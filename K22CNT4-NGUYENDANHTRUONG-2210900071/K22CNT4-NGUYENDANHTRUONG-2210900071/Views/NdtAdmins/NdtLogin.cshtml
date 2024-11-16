@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Đăng Nhập";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center my-4">Đăng Nhập</h2>
+                <form method="post" action="@Url.Action("NdtLogin", "NdtAdmins")">
+                    @Html.AntiForgeryToken()  <!-- Thêm dòng này để tạo CSRF token -->
+
+                    @if (ViewBag.ErrorMessage != null)
+                    {
+                        <div class="alert alert-danger">
+                            @ViewBag.ErrorMessage
+                        </div>
+                    }
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matKhau">Mật khẩu</label>
+                        <input type="password" class="form-control" id="matKhau" name="matKhau" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Nhập</button>
+                </form>
+                <div class="text-center mt-3">
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

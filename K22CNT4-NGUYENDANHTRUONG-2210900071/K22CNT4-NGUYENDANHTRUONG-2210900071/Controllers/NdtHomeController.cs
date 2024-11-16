@@ -13,14 +13,14 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult NdtAbout()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult NdtContact()
         {
             ViewBag.Message = "Your contact page.";
 

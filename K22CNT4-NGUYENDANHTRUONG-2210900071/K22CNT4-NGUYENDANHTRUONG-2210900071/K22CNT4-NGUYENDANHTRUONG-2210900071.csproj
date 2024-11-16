@@ -129,6 +129,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthorizeAdminAttribute.cs" />
     <Compile Include="Controllers\NdtAdminsController.cs" />
     <Compile Include="Controllers\NdtChiTietDonHangsController.cs" />
     <Compile Include="Controllers\NdtDanhMucsController.cs" />
@@ -243,8 +244,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\NdtHome\About.cshtml" />
-    <Content Include="Views\NdtHome\Contact.cshtml" />
+    <Content Include="Views\NdtHome\NdtAbout.cshtml" />
+    <Content Include="Views\NdtHome\NdtContact.cshtml" />
     <Content Include="Views\NdtHome\NdtIndex.cshtml" />
     <Content Include="Views\NdtAdmins\NdtCreate.cshtml" />
     <Content Include="Views\NdtAdmins\NdtDelete.cshtml" />
@@ -285,6 +286,7 @@
     <Content Include="Views\NdtDonHangs\NdtIndex.cshtml" />
     <Content Include="Views\NdtGioHangs\NdtCompleteCheckout.cshtml" />
     <Content Include="Views\NdtGioHangs\NdtCheckout.cshtml" />
+    <Content Include="Views\NdtAdmins\NdtLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

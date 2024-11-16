@@ -7,12 +7,45 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using K22CNT4_NGUYENDANHTRUONG_2210900071.Models;
+using K22CNT4_NGUYENDANHTRUONG_2210900071.Filters; // Thêm namespace cho bộ lọc
 
 namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
 {
+    [AuthorizeAdmin] // Đảm bảo chỉ Admin đã đăng nhập mới truy cập được các action
     public class NdtAdminsController : Controller
     {
         private Entities db = new Entities(); // Khởi tạo DbContext
+
+        // GET: Admins/Login
+        [AllowAnonymous] // Cho phép truy cập không cần đăng nhập
+        public ActionResult NdtLogin()
+        {
+            return View(); // Trả về view đăng nhập
+        }
+
+        // POST: Admins/Login
+        [HttpPost]
+        [AllowAnonymous] // Cho phép truy cập không cần đăng nhập
+        [ValidateAntiForgeryToken]
+        public ActionResult NdtLogin(string email, string matKhau)
+        {
+            var admin = db.Admins.FirstOrDefault(a => a.Email == email && a.MatKhau == matKhau);
+            if (admin != null)
+            {
+                Session["AdminID"] = admin.ID; // Lưu ID admin vào session
+                Session["AdminName"] = admin.TenAdmin; // Lưu tên admin vào session
+                return RedirectToAction("NdtIndex"); // Đăng nhập thành công, chuyển hướng đến trang quản lý admin
+            }
+            ModelState.AddModelError("", "Thông tin đăng nhập không đúng.");
+            return View();
+        }
+
+        // GET: Admins/Logout
+        public ActionResult NdtLogout()
+        {
+            Session.Clear(); // Xóa tất cả dữ liệu session
+            return RedirectToAction("NdtLogin"); // Chuyển hướng về trang đăng nhập
+        }
 
         // GET: Admins
         public ActionResult NdtIndex()
@@ -30,18 +63,18 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Admin admin = db.Admins.Find(id); // Tìm admin theo ID
+            Admin admin = db.Admins.Find(id);
             if (admin == null)
             {
                 return HttpNotFound("Admin not found with the specified ID.");
             }
-            return View(admin); // Trả về view chi tiết admin
+            return View(admin);
         }
 
         // GET: Admins/Create
         public ActionResult NdtCreate()
         {
-            return View(); // Trả về view tạo admin mới
+            return View();
         }
 
         // POST: Admins/Create
@@ -51,12 +84,11 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Admins.Add(admin); // Thêm admin mới vào DbSet
-                db.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
-                return RedirectToAction("NdtIndex"); // Chuyển hướng về trang danh sách admin
+                db.Admins.Add(admin);
+                db.SaveChanges();
+                return RedirectToAction("NdtIndex");
             }
-
-            return View(admin); // Trả về view nếu có lỗi
+            return View(admin);
         }
 
         // GET: Admins/Edit/5
@@ -66,12 +98,12 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Admin admin = db.Admins.Find(id); // Tìm admin theo ID
+            Admin admin = db.Admins.Find(id);
             if (admin == null)
             {
                 return HttpNotFound("Admin not found with the specified ID.");
             }
-            return View(admin); // Trả về view chỉnh sửa admin
+            return View(admin);
         }
 
         // POST: Admins/Edit/5
@@ -81,11 +113,11 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(admin).State = EntityState.Modified; // Đánh dấu admin là đã được sửa đổi
-                db.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
-                return RedirectToAction("NdtIndex"); // Chuyển hướng về trang danh sách admin
+                db.Entry(admin).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("NdtIndex");
             }
-            return View(admin); // Trả về view nếu có lỗi
+            return View(admin);
         }
 
         // GET: Admins/Delete/5
@@ -95,12 +127,12 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Admin admin = db.Admins.Find(id); // Tìm admin theo ID
+            Admin admin = db.Admins.Find(id);
             if (admin == null)
             {
                 return HttpNotFound("Admin not found with the specified ID.");
             }
-            return View(admin); // Trả về view xác nhận xóa admin
+            return View(admin);
         }
 
         // POST: Admins/Delete/5
@@ -108,13 +140,13 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Admin admin = db.Admins.Find(id); // Tìm admin theo ID
+            Admin admin = db.Admins.Find(id);
             if (admin != null)
             {
-                db.Admins.Remove(admin); // Xóa admin khỏi DbSet
-                db.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+                db.Admins.Remove(admin);
+                db.SaveChanges();
             }
-            return RedirectToAction("NdtIndex"); // Chuyển hướng về trang danh sách admin
+            return RedirectToAction("NdtIndex");
         }
 
         // Dispose the context properly
@@ -122,9 +154,9 @@ namespace K22CNT4_NGUYENDANHTRUONG_2210900071.Controllers
         {
             if (disposing)
             {
-                db?.Dispose(); // Giải phóng tài nguyên của DbContext nếu db không phải null
+                db?.Dispose();
             }
-            base.Dispose(disposing); // Gọi phương thức Dispose của lớp cơ sở
+            base.Dispose(disposing);
         }
     }
 }

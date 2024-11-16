@@ -3,17 +3,17 @@
     ViewBag.Title = "NdtDelete";
 }
 
-<h2>Delete</h2>
+<h2 class="text-center">Xóa Sản Phẩm</h2>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>SanPham</h4>
+<h3 class="text-center">Bạn có chắc chắn muốn xóa sản phẩm này?</h3>
+
+<div class="product-details">
+    <h4>Thông tin Sản Phẩm</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.TenSanPham)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.TenSanPham)
         </dd>
@@ -21,7 +21,6 @@
         <dt>
             @Html.DisplayNameFor(model => model.MoTa)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.MoTa)
         </dd>
@@ -29,7 +28,6 @@
         <dt>
             @Html.DisplayNameFor(model => model.Gia)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.Gia)
         </dd>
@@ -37,7 +35,6 @@
         <dt>
             @Html.DisplayNameFor(model => model.SoLuong)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.SoLuong)
         </dd>
@@ -45,7 +42,6 @@
         <dt>
             @Html.DisplayNameFor(model => model.HinhAnh)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.HinhAnh)
         </dd>
@@ -53,21 +49,99 @@
         <dt>
             @Html.DisplayNameFor(model => model.DanhMuc.TenDanhMuc)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.DanhMuc.TenDanhMuc)
         </dd>
-
     </dl>
-
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
-
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "NdtIndex")
-        </div>
-    }
 </div>
 
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions text-center">
+        <input type="submit" value="Xóa" class="btn btn-danger btn-lg" />
+        <span class="mx-2">|</span>
+        @Html.ActionLink("Quay lại danh sách", "NdtIndex", null, new { @class = "btn btn-secondary btn-lg" })
+    </div>
+}
+
+<style>
+    /* Cấu trúc chung */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    h2, h3 {
+        color: #343a40;
+    }
+
+    /* Cấu trúc bảng chi tiết sản phẩm */
+    .product-details {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    dl {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    dt {
+        font-weight: bold;
+        color: #555;
+    }
+
+    dd {
+        color: #777;
+        margin: 0;
+    }
+
+    .form-actions {
+        margin-top: 20px;
+    }
+
+        .form-actions input,
+        .form-actions a {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .mx-2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+</style>

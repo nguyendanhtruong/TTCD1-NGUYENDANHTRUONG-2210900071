@@ -1,13 +1,90 @@
 ﻿@model K22CNT4_NGUYENDANHTRUONG_2210900071.Models.SanPham
 
-<h2>Chi tiết sản phẩm</h2>
+<h2 class="text-center">Chi Tiết Sản Phẩm</h2>
 
-<div>
-    <h3>@Model.TenSanPham</h3>
-    <img src="@Url.Content("~/Images/" + @Model.HinhAnh)" alt="@Model.TenSanPham" />
-    <p>Giá: @Model.Gia.ToString("C")</p>
-    <p>Danh mục: @(Model.DanhMuc != null ? Model.DanhMuc.TenDanhMuc : "Không có danh mục")</p>
-    <p>Mô tả: @Model.MoTa</p>
+<div class="product-detail">
+    <h3 class="product-title">@Model.TenSanPham</h3>
+
+    <div class="product-image">
+        <img src="@Url.Content("~/Images/" + @Model.HinhAnh)" alt="@Model.TenSanPham" />
+    </div>
+
+    <div class="product-info">
+        <p><strong>Giá:</strong> @Model.Gia.ToString("C")</p>
+        <p><strong>Danh mục:</strong> @(Model.DanhMuc != null ? Model.DanhMuc.TenDanhMuc : "Không có danh mục")</p>
+        <p><strong>Mô tả:</strong> @Model.MoTa</p>
+    </div>
+
+    <div class="back-link">
+        <a href="@Url.Action("NdtIndex", "NdtSanPhams")" class="btn btn-secondary">Quay lại danh sách</a>
+    </div>
 </div>
 
-<a href="@Url.Action("NdtIndex", "NdtSanPhams")">Quay lại danh sách</a>
+<style>
+    /* Cấu trúc chung */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    h2 {
+        color: #343a40;
+        margin-top: 20px;
+    }
+
+    /* Chi tiết sản phẩm */
+    .product-detail {
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px auto;
+        width: 80%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-title {
+        color: #007bff;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .product-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+    .product-info {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #555;
+    }
+
+        .product-info p {
+            margin: 10px 0;
+        }
+
+    .back-link {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 18px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+</style>

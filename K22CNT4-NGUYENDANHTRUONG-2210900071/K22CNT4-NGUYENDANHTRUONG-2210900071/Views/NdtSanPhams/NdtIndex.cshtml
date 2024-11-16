@@ -1,430 +1,250 @@
-﻿@model IEnumerable<K22CNT4_NGUYENDANHTRUONG_2210900071.Models.SanPham>
+﻿<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Cấu trúc chung */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-<h2>Trang Sản Phẩm </h2>
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+        }
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #e9ecef;
-        margin: 0;
-        padding: 0;
-    }
+        /* Header */
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #343a40;
-        padding: 15px 30px;
-        color: white;
-    }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
 
-        .navbar .logo-filter {
+        .logo h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .logo-filter form {
             display: flex;
             align-items: center;
         }
 
-        .navbar h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        .navbar form {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-            .navbar form label {
+            .logo-filter form label {
                 color: white;
-                font-size: 16px;
-                margin-right: 5px;
+                margin-right: 10px;
             }
 
-            .navbar form select {
-                padding: 5px;
-                font-size: 16px;
+            .logo-filter form input,
+            .logo-filter form button {
+                padding: 8px;
+                margin-left: 5px;
             }
 
-        .navbar ul {
+        .navbar nav ul {
             list-style: none;
             display: flex;
-            margin: 0;
             padding: 0;
         }
 
-            .navbar ul li {
-                margin: 0 10px;
+            .navbar nav ul li {
+                margin: 0 15px;
             }
 
-                .navbar ul li a {
-                    color: white;
+                .navbar nav ul li a {
                     text-decoration: none;
+                    color: white;
                     font-size: 16px;
-                    padding: 5px 10px;
-                    transition: color 0.3s ease;
                 }
 
-                    .navbar ul li a:hover {
+                    .navbar nav ul li a:hover {
                         color: #007bff;
                     }
 
-    .banner {
-        width: 100%;
-        height: 300px;
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
-
-        .banner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        /* Banner */
+        .banner {
+            margin-top: 20px;
         }
 
-    .header {
-        display: flex;
-        justify-content: flex-end;
-        margin: 20px;
-    }
-
-        .header a {
-            background-color: #007bff;
-            color: white;
-            padding: 8px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-        }
-
-            .header a:hover {
-                background-color: #0056b3;
+            .banner img {
+                width: 100%;
+                height: auto;
             }
 
-    .product-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 20px;
-        justify-content: center;
-    }
+        /* Giỏ hàng */
+        .header {
+            text-align: right;
+            margin-top: 10px;
+            margin-right: 30px;
+        }
 
-    .product-item {
-        width: 100%;
-        max-width: 280px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-        margin: 10px;
-    }
+            .header a {
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
 
-        .product-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+                .header a:hover {
+                    background-color: #0056b3;
+                }
+
+        /* Danh sách sản phẩm */
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .product-item {
+            background-color: white;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-    .product-info {
-        text-align: center;
-        margin: 15px 0;
-    }
-
-        .product-info h3 {
-            font-size: 20px;
-            color: #333;
-            margin: 0;
-        }
-
-        .product-info p {
-            font-size: 16px;
-            color: #777;
-            margin: 5px 0;
-        }
-
-        .product-info .category {
-            font-size: 14px;
-            color: #555;
-            font-style: italic;
-        }
-
-    .product-actions {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-        .product-actions a {
-            background-color: #28a745;
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-            text-align: center;
-            width: 48%;
-            transition: background-color 0.3s ease;
-        }
-
-            .product-actions a:hover {
-                background-color: #218838;
+            .product-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             }
 
-    <style >
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        padding: 0;
-        color: #333;
-    }
+            .product-item img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #343a40;
-        padding: 15px 30px;
-        color: white;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
 
-        .navbar .logo-filter {
+            .product-info h3 {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+            .product-info p {
+                font-size: 16px;
+                color: #777;
+                margin: 5px 0;
+            }
+
+        .product-actions {
+            padding: 15px;
+            text-align: center;
+            background-color: #f8f9fa;
             display: flex;
+            justify-content: space-around;
             align-items: center;
         }
 
-        .navbar h1 {
-            font-size: 26px;
-            margin: 0;
-            font-weight: bold;
-        }
-
-        .navbar form {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-            .navbar form label {
+            .product-actions a {
+                text-decoration: none;
+                background-color: #28a745;
                 color: white;
-                font-size: 16px;
-                margin-right: 5px;
-            }
-
-            .navbar form select {
-                padding: 8px;
-                font-size: 16px;
+                padding: 8px 16px;
                 border-radius: 5px;
-                border: none;
-            }
-
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-            .navbar ul li {
                 margin: 0 10px;
+                transition: background-color 0.3s ease;
+                width: 45%;
+                text-align: center;
             }
 
-                .navbar ul li a {
-                    color: white;
-                    text-decoration: none;
-                    font-size: 16px;
-                    padding: 8px 12px;
-                    border-radius: 5px;
-                    transition: background-color 0.3s ease;
+                .product-actions a:hover {
+                    background-color: #218838;
                 }
 
-                    .navbar ul li a:hover {
-                        background-color: #495057;
+                .product-actions a:last-child {
+                    background-color: #007bff;
+                }
+
+                    .product-actions a:last-child:hover {
+                        background-color: #0056b3;
                     }
 
-    .banner {
-        width: 100%;
-        height: 350px;
-        overflow: hidden;
-        margin-bottom: 20px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-        .banner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-            .banner img:hover {
-                transform: scale(1.05);
+            .product-actions .cart-icon {
+                font-size: 18px;
             }
+    </style>
+</head>
 
-    .header {
-        display: flex;
-        justify-content: flex-end;
-        margin: 20px;
-    }
+<body>
+    <h2>Trang Sản Phẩm</h2>
 
-        .header a {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-        }
+    <header>
+        <div class="navbar">
+            <div class="logo-filter">
+                <div class="logo">
+                    <h1>Shop Quần Áo</h1>
+                </div>
 
-            .header a:hover {
-                background-color: #0056b3;
-            }
+                <!-- Thanh Tìm Kiếm -->
+                <form method="get" action="@Url.Action("NdtIndex", "NdtSanPhams")">
+                    <label for="search">Tìm kiếm sản phẩm:</label>
+                    <input type="text" name="search" id="search" placeholder="Tìm kiếm..." value="@Request.QueryString["search"]" />
+                    <button type="submit">Tìm</button>
+                </form>
 
-    .product-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 20px;
-        justify-content: center;
-    }
-
-    .product-item {
-        width: 100%;
-        max-width: 280px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-        margin: 10px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-        .product-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .product-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-            .product-item img:hover {
-                transform: scale(1.03);
-            }
-
-    .product-info {
-        text-align: center;
-        margin: 15px 0;
-    }
-
-        .product-info h3 {
-            font-size: 20px;
-            color: #333;
-            margin: 0;
-            font-weight: bold;
-        }
-
-        .product-info p {
-            font-size: 16px;
-            color: #777;
-            margin: 5px 0;
-        }
-
-        .product-info .category {
-            font-size: 14px;
-            color: #888;
-            font-style: italic;
-        }
-
-    .product-actions {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-        .product-actions a {
-            background-color: #28a745;
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-            text-align: center;
-            width: 48%;
-            transition: background-color 0.3s ease;
-        }
-
-            .product-actions a:hover {
-                background-color: #218838;
-            }
-</style>
-
-<header>
-    <div class="navbar">
-        <div class="logo-filter">
-            <div class="logo">
-                <h1>Shop Quần Áo</h1>
+                <form method="get" action="@Url.Action("NdtIndex", "NdtSanPhams")">
+                    <label for="DanhMucList">Lọc theo danh mục:</label>
+                    @Html.DropDownList("categoryId", (SelectList)ViewBag.DanhMucList, "Tất cả", new { onchange = "this.form.submit();" })
+                </form>
             </div>
 
-            <form method="get" action="@Url.Action("NdtIndex", "NdtSanPhams")">
-                <label for="DanhMucList">Lọc theo danh mục:</label>
-                @Html.DropDownList("categoryId", (SelectList)ViewBag.DanhMucList, "Tất cả", new { onchange = "this.form.submit();" })
-            </form>
+            <nav>
+                <ul id="menu-list">
+                    <li>@Html.ActionLink("Trang chủ", "NdtIndex", "NdtHome")</li>
+                    <li>@Html.ActionLink("Sản Phẩm", "NdtIndex", "NdtSanPhams")</li>
+                    <li>@Html.ActionLink("Giỏ hàng", "NdtIndex", "NdtGioHangs")</li>
+                    <li>@Html.ActionLink("Đăng nhập", "NdtLogin", "NdtNguoiDungs")</li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <nav>
-            <ul id="menu-list">
-                <li>@Html.ActionLink("Trang chủ", "NdtIndex", "NdtHome")</li>
-                <li>@Html.ActionLink("Sản Phẩm", "NdtIndex", "NdtSanPhams")</li>
-                <li>@Html.ActionLink("Giỏ hàng", "NdtIndex", "NdtGioHangs")</li>
-                <li>@Html.ActionLink("Đăng nhập", "NdtLogin", "NdtNguoiDungs")</li>
-            </ul>
-        </nav>
+    <div class="banner">
+        <img src="@Url.Content("~/Images/1.jpg")" alt="Banner Shop" />
     </div>
-</header>
 
-<div class="banner">
-    <img src="@Url.Content("~/Images/1.jpg")" alt="Banner Shop" />
-</div>
+    <div class="header">
+        <a href="@Url.Action("NdtIndex", "NdtGioHangs")">Xem giỏ hàng</a>
+    </div>
 
-<div class="header">
-    <a href="@Url.Action("NdtIndex", "NdtGioHangs")">Xem giỏ hàng</a>
-</div>
+    <div class="product-list">
+        @foreach (var sanPham in Model)
+        {
+            <div class="product-item">
+                <img src="@Url.Content("~/Images/" + sanPham.HinhAnh)" alt="@sanPham.TenSanPham" />
 
-<div class="product-list">
-    @foreach (var sanPham in Model)
-    {
-        <div class="product-item">
-            <img src="@Url.Content("~/Images/" + sanPham.HinhAnh)" alt="@sanPham.TenSanPham" />
+                <div class="product-info">
+                    <h3>@sanPham.TenSanPham</h3>
+                    @using System.Globalization
+                    <p>Giá: @sanPham.Gia.ToString("C0", new CultureInfo("vi-VN"))</p>
+                    <p class="category">
+                        Danh mục: @(sanPham.DanhMuc != null ? sanPham.DanhMuc.TenDanhMuc : "Không có danh mục")
+                    </p>
+                </div>
 
-            <div class="product-info">
-                <h3>@sanPham.TenSanPham</h3>
-                <p>Giá: @sanPham.Gia.ToString("N0") VND</p>
-                <p class="category">
-                    Danh mục: @(sanPham.DanhMuc != null ? sanPham.DanhMuc.TenDanhMuc : "Không có danh mục")
-                </p>
+                <div class="product-actions">
+                    <a href="@Url.Action("NdtAddToCart", "NdtSanPhams", new { id = sanPham.ID })">
+                        <i class="fas fa-cart-plus cart-icon"></i>
+                    </a>
+                    <a href="@Url.Action("NdtDetails", "NdtSanPhams", new { id = sanPham.ID })"> Chi tiết </a>
+                </div>
             </div>
-
-            <div class="product-actions">
-                <a href="@Url.Action("NdtAddToCart", "NdtSanPhams", new { id = sanPham.ID })">Thêm vào giỏ hàng</a>
-                <a href="@Url.Action("NdtDetails", "NdtSanPhams", new { id = sanPham.ID })">Xem chi tiết sản phẩm</a>
-            </div>
-        </div>
-    }
-</div>
+        }
+    </div>
+</body>

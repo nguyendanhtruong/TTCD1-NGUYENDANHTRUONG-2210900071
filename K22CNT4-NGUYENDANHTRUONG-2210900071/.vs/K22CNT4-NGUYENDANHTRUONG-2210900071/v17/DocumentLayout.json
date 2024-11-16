@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndthome\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndthome\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|c:\\ttcd1-nguyendanhtruong-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|c:\\ttcd1-nguyendanhtruong-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtsanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtsanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\controllers\\authorizeadminattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\controllers\\authorizeadminattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtnguoidungscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +67,6 @@
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtgiohangs\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndthome\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndthome\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtdonhangs\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtdonhangs\\ndtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -57,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -123,10 +143,6 @@
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtdonhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtsanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtsanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtgiohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\controllers\\ndtgiohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -159,14 +175,6 @@
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtsanphams\\ndtedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -197,10 +205,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndtadmins\\ndtedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\views\\ndthome\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|solutionrelative:k22cnt4-nguyendanhtruong-2210900071\\views\\ndthome\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE4E0DFC-BE25-4267-A6E4-193C497308B9}|K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071.csproj|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\k22cnt4-nguyendanhtruong-2210900071\\models\\chitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -349,6 +353,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{1C30E224-FDC1-4E47-BF8B-D8B2CB8B5266}|Images{1C30E224-FDC1-4E47-BF8B-D8B2CB8B5266}|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Images\\7.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{1C30E224-FDC1-4E47-BF8B-D8B2CB8B5266}|Images{1C30E224-FDC1-4E47-BF8B-D8B2CB8B5266}|solutionrelative:K22CNT4-NGUYENDANHTRUONG-2210900071\\Images\\7.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtHome\\Contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtHome\\Contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -358,7 +366,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 385,
-          "SelectedChildIndex": 76,
+          "SelectedChildIndex": 82,
           "Children": [
             {
               "$type": "Bookmark",
@@ -370,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "b1.jpg - Bitmap [200x251, 24 bit, JPG]",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Images\\b1.jpg",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Images\\b1.jpg",
@@ -382,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "7.jpg - Bitmap [225x225, 24 bit, JPG]",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Images\\7.jpg",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Images\\7.jpg",
@@ -394,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "CompleteCheckout.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\CompleteCheckout.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\CompleteCheckout.cshtml",
@@ -406,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Checkout.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Checkout.cshtml",
@@ -417,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Create.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Create.cshtml",
@@ -429,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Delete.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Delete.cshtml",
@@ -441,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Details.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Details.cshtml",
@@ -453,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Edit.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Edit.cshtml",
@@ -465,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Index.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\GioHangs\\Index.cshtml",
@@ -477,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Create.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Create.cshtml",
@@ -489,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Delete.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Delete.cshtml",
@@ -501,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Details.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Details.cshtml",
@@ -513,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Edit.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Edit.cshtml",
@@ -525,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Index.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DonHangs\\Index.cshtml",
@@ -537,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Create.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Create.cshtml",
@@ -549,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Delete.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Delete.cshtml",
@@ -561,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Details.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Details.cshtml",
@@ -573,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Edit.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Edit.cshtml",
@@ -585,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Index.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\DanhMucs\\Index.cshtml",
@@ -597,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Create.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Create.cshtml",
@@ -609,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Delete.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Delete.cshtml",
@@ -621,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Details.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Details.cshtml",
@@ -633,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 77,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Edit.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Edit.cshtml",
@@ -645,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 78,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Index.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\ChiTietDonHangs\\Index.cshtml",
@@ -657,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 79,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Register.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Register.cshtml",
@@ -669,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Login.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Login.cshtml",
@@ -681,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Create.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Create.cshtml",
@@ -693,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Delete.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Delete.cshtml",
@@ -705,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Details.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Details.cshtml",
@@ -717,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Edit.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Edit.cshtml",
@@ -729,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Index.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NguoiDungs\\Index.cshtml",
@@ -741,561 +749,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NdtNguoiDungsController.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtNguoiDungsController.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtNguoiDungsController.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtNguoiDungsController.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtNguoiDungsController.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAHEAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:44:44.301Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NdtAdminsController.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtAdminsController.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtAdminsController.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtAdminsController.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtAdminsController.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAkwIIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:05:18.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NdtIndex.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtIndex.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtIndex.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtIndex.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtIndex.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T13:35:24.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "NdtDanhMucsController.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDanhMucsController.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDanhMucsController.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDanhMucsController.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDanhMucsController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAI0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:44:04.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "NdtCreate.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtCreate.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtCreate.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtCreate.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtCreate.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:07:00.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "NdtDelete.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDelete.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDelete.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDelete.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDelete.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADgAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:06:45.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "NdtDetails.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDetails.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDetails.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDetails.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDetails.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:06:18.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "NdtEdit.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtEdit.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtEdit.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtEdit.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtEdit.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAADsAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:06:08.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "NdtIndex.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtIndex.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtIndex.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtIndex.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtIndex.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:05:18.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "NdtDelete.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDelete.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDelete.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDelete.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDelete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:03:20.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "NdtDetails.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDetails.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDetails.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDetails.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDetails.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:02:54.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "NdtIndex.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtIndex.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtIndex.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtIndex.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtIndex.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:02:06.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "NdtCreate.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtCreate.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtCreate.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtCreate.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtCreate.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:35:51.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "NdtDelete.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDelete.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDelete.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDelete.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDelete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:35:22.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "NdtEdit.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtEdit.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtEdit.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtEdit.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtEdit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:33:11.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "NdtCreate.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCreate.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCreate.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCreate.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCreate.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADkAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:25:37.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "NdtDetails.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDetails.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDetails.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDetails.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDetails.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAC4AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:24:56.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "NdtEdit.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtEdit.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtEdit.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtEdit.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtEdit.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADsAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:24:43.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "NdtCreate.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtCreate.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtCreate.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtCreate.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtCreate.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:16:33.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "NdtDelete.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDelete.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDelete.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDelete.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDelete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:15:53.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "NdtDetails.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDetails.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDetails.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDetails.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDetails.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:15:42.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "NdtEdit.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtEdit.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtEdit.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtEdit.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtEdit.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADcAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:14:51.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NdtLogin.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtLogin.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtLogin.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtLogin.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtLogin.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAwCUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:13:58.684Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NdtIndex.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtIndex.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtIndex.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtIndex.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtIndex.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T13:48:07.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "NdtCheckout.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCheckout.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCheckout.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCheckout.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCheckout.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAA8AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T13:45:54.199Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NdtRegister.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtRegister.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtRegister.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtRegister.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtRegister.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T12:58:29.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "NdtDetails.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDetails.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDetails.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDetails.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDetails.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACsAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T12:57:02.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "NdtDelete.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDelete.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDelete.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDelete.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDelete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T12:55:56.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "NdtCompleteCheckout.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCompleteCheckout.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCompleteCheckout.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCompleteCheckout.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCompleteCheckout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T12:55:20.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "NdtSanPhamsController.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtSanPhamsController.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtSanPhamsController.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtSanPhamsController.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtSanPhamsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:12:10.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "NdtDonHangsController.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDonHangsController.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDonHangsController.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDonHangsController.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDonHangsController.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAwBwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:55:01.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "NdtGioHangsController.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtGioHangsController.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtGioHangsController.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtGioHangsController.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtGioHangsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHUAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:44:22.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "NdtChiTietDonHangsController.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtChiTietDonHangsController.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtChiTietDonHangsController.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtChiTietDonHangsController.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtChiTietDonHangsController.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAAAIkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:43:50.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:01:44.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "NdtCreate.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtCreate.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtCreate.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtCreate.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtCreate.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:15:48.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "NdtDelete.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDelete.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDelete.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDelete.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDelete.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:15:16.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "NdtDetails.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDetails.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDetails.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDetails.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDetails.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:14:58.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "NdtEdit.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtEdit.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtEdit.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtEdit.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtEdit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:14:03.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "NdtIndex.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtIndex.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtIndex.cshtml",
               "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtIndex.cshtml",
               "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtIndex.cshtml",
-              "ViewState": "AQIAAG4BAAAAAAAAAAAAAI4BAAAKAAAA",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAAAOoAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:13:15.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "NdtCreate.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtCreate.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtCreate.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtCreate.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtCreate.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:09:24.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "NdtDelete.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDelete.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDelete.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDelete.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDelete.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAEwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:08:47.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "NdtDetails.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDetails.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDetails.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDetails.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDetails.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAABYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:07:08.167Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "NdtEdit.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtEdit.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtEdit.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtEdit.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtEdit.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAAgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:06:54.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NdtIndex.cshtml",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtIndex.cshtml",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtIndex.cshtml",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtIndex.cshtml",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtIndex.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:06:40.782Z",
+              "WhenOpened": "2024-11-07T02:13:15.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\App_Start\\RouteConfig.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwDIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:03:52.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NdtHomeController.cs",
-              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtHomeController.cs",
-              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtHomeController.cs",
-              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtHomeController.cs",
-              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtHomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:03:10.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 88,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtHome\\Contact.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtHome\\Contact.cshtml",
@@ -1307,19 +774,584 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NdtLogin.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtLogin.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtLogin.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtLogin.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtLogin.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAADwvy8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T19:05:40.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthorizeAdminAttribute.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\AuthorizeAdminAttribute.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\AuthorizeAdminAttribute.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\AuthorizeAdminAttribute.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\AuthorizeAdminAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T19:00:41.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NdtIndex.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtIndex.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtIndex.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtIndex.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:06:40.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NdtNguoiDungsController.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtNguoiDungsController.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtNguoiDungsController.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtNguoiDungsController.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtNguoiDungsController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAHEAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:44:44.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NdtAdminsController.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtAdminsController.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtAdminsController.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtAdminsController.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtAdminsController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:05:18.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NdtIndex.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtIndex.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtIndex.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtIndex.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T13:35:24.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NdtDanhMucsController.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDanhMucsController.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDanhMucsController.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDanhMucsController.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDanhMucsController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAI0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:44:04.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NdtCreate.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtCreate.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtCreate.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtCreate.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtCreate.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T16:07:00.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NdtDelete.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDelete.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDelete.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDelete.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDelete.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T16:06:45.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NdtDetails.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDetails.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDetails.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDetails.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T16:06:18.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NdtEdit.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtEdit.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtEdit.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtEdit.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtEdit.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T16:06:08.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NdtIndex.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtIndex.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtIndex.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtIndex.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtChiTietDonHangs\\NdtIndex.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T16:05:18.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NdtDelete.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDelete.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDelete.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDelete.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDelete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T16:03:20.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NdtDetails.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDetails.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDetails.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDetails.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T16:02:54.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "NdtIndex.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtIndex.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtIndex.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtIndex.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDanhMucs\\NdtIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T16:02:06.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NdtCreate.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtCreate.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtCreate.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtCreate.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtCreate.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:35:51.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NdtDelete.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDelete.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDelete.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDelete.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDelete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:35:22.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "NdtEdit.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtEdit.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtEdit.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtEdit.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtEdit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:33:11.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "NdtCreate.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCreate.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCreate.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCreate.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCreate.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:25:37.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "NdtDetails.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDetails.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDetails.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDetails.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDetails.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAC4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:24:56.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "NdtEdit.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtEdit.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtEdit.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtEdit.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtEdit.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:24:43.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "NdtCreate.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtCreate.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtCreate.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtCreate.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtCreate.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:16:33.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "NdtDelete.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDelete.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDelete.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDelete.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDelete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:15:53.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "NdtDetails.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDetails.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDetails.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDetails.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:15:42.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "NdtEdit.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtEdit.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtEdit.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtEdit.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtEdit.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:14:51.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NdtLogin.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtLogin.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtLogin.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtLogin.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtLogin.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:13:58.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NdtIndex.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtIndex.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtIndex.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtIndex.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T13:48:07.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "NdtCheckout.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCheckout.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCheckout.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCheckout.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCheckout.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T13:45:54.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NdtRegister.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtRegister.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtRegister.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtRegister.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtNguoiDungs\\NdtRegister.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T12:58:29.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "NdtDetails.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDetails.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDetails.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDetails.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtDonHangs\\NdtDetails.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T12:57:02.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NdtDelete.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDelete.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDelete.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDelete.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtDelete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T12:55:56.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "NdtCompleteCheckout.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCompleteCheckout.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCompleteCheckout.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCompleteCheckout.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtGioHangs\\NdtCompleteCheckout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T12:55:20.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NdtSanPhamsController.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtSanPhamsController.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtSanPhamsController.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtSanPhamsController.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtSanPhamsController.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAAAJoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:12:10.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NdtDonHangsController.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDonHangsController.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDonHangsController.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDonHangsController.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtDonHangsController.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAAwBwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:55:01.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "NdtGioHangsController.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtGioHangsController.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtGioHangsController.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtGioHangsController.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtGioHangsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:44:22.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NdtChiTietDonHangsController.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtChiTietDonHangsController.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtChiTietDonHangsController.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtChiTietDonHangsController.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtChiTietDonHangsController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAAIkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:43:50.436Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:01:44.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "NdtCreate.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtCreate.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtCreate.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtCreate.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtCreate.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:15:48.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NdtDelete.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDelete.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDelete.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDelete.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDelete.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAH0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:15:16.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NdtDetails.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDetails.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDetails.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDetails.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtDetails.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:14:58.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "NdtEdit.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtEdit.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtEdit.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtEdit.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtSanPhams\\NdtEdit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:14:03.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NdtCreate.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtCreate.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtCreate.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtCreate.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtCreate.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:09:24.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "NdtDelete.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDelete.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDelete.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDelete.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDelete.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:08:47.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "NdtDetails.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDetails.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDetails.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDetails.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtDetails.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAABYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:07:08.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "NdtEdit.cshtml",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtEdit.cshtml",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtEdit.cshtml",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtEdit.cshtml",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtAdmins\\NdtEdit.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T02:06:54.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwDIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:03:52.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NdtHomeController.cs",
+              "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtHomeController.cs",
+              "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtHomeController.cs",
+              "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtHomeController.cs",
+              "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Controllers\\NdtHomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:03:10.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "NdtIndex.cshtml",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtHome\\NdtIndex.cshtml",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtHome\\NdtIndex.cshtml",
               "ToolTip": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtHome\\NdtIndex.cshtml",
               "RelativeToolTip": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Views\\NdtHome\\NdtIndex.cshtml",
-              "ViewState": "AQIAAL0AAAAAAAAAAAAAAN0AAAAAAAAA",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAAAK8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T02:02:00.686Z"
+              "WhenOpened": "2024-11-07T02:02:00.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\Admin.cs",
@@ -1331,7 +1363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "ChiTietDonHang.cs",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\ChiTietDonHang.cs",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\ChiTietDonHang.cs",
@@ -1343,7 +1375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "DanhMuc.cs",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\DanhMuc.cs",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\DanhMuc.cs",
@@ -1355,7 +1387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "DonHang.cs",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\DonHang.cs",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\DonHang.cs",
@@ -1367,7 +1399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "GioHang.cs",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\GioHang.cs",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\GioHang.cs",
@@ -1379,7 +1411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "NguoiDung.cs",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\NguoiDung.cs",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\NguoiDung.cs",
@@ -1391,7 +1423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "SanPham.cs",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\SanPham.cs",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\SanPham.cs",
@@ -1403,7 +1435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "Model1.edmx [Diagram1]",
               "DocumentMoniker": "C:\\TTCD1-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\Model1.edmx",
               "RelativeDocumentMoniker": "K22CNT4-NGUYENDANHTRUONG-2210900071\\Models\\Model1.edmx",
